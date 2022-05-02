@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Gantt Chart{% endblock title %}
+{% block body %}
+ <div class="pt-4">
+    {% autoescape off %}
+        {% include 'operations_chart_fig.html' %}
+    {% endautoescape %}
+ </div>
+    
+{% endblock body %}

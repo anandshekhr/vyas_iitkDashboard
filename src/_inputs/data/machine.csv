@@ -1,0 +1,38 @@
+Name,Line,Machine No,Status,Operation
+SW0110,SWL,1,READY,Stage-I SW Skeleton Tack Welding
+SW0120,SWL,2,READY,Stage-II Robotic Spot Welding
+SW0130,SWL,3,READY,Stage-III SW skeletion Robotic Mig Welding
+SW0140,SWL,4,READY,Stage-IV Roof Bearer Robotic Arc Spot welding
+SW0150,SWL,5,READY,Stage-V SW & Roof Bearer Robotic welding
+SW0160,SWL,6,READY,Stage-VI Backpiece Leftover welding
+EW0110,EWL,1,READY,"Stage I Fabrication of Sub assemblies at Tacking Jigs & Fixtures , Framework tacking of Endwall Complete"
+EW0120,EWL,2,READY,Stage II Robotic Endwall Welding Station
+EW0130,EWL,3,READY,Stage III Manual Repair stand
+RF0110,RF,1,READY,Stage I Machine- B&C machine
+RF0120,RF,2,READY,Stage II Manual JIG 9.2
+RF0130,RF,3,READY,Stage III Roof Robotic Welding Station
+RF0140,RF,4,READY,Stage IV Roof Acceptance Stand and left over Welding station(13.0)
+RF0150,RF,5,READY,Stage V Roof Acceptance Stand and left over Welding station(11.0)
+UF0110,UF,1,READY,"Stage I Fab:Bat Box SubAssy, Pump Mt Brkt, Elec RBC channel & other cross member SubAssys"
+UF0210,UF,2,READY,"Stage II Framing, fitment & welding with BO front Part  of Underframe middle parts"
+UF0220,UF,3,READY,"Stage II Framing, fitment & welding with BO front Part  of Underframe middle parts"
+UF0310,UF,4,READY,Stage III Robotic Welding upside of Underframe
+UF0320,UF,5,READY,Stage IV  Robotic Welding downside of Underframe
+UF0400,UF,6,READY,Stage V Repair & leftover work by manual welding Top Side
+UF0500,UF,7,READY,Stage VI Corrugated Sheets Tack welded  to Underframe frame work
+UF0610,UF,8,READY,Stage VII Robotic Corrugated sheet stitch welding done
+UF0620,UF,9,READY,Stage VIII Robotic Corrugated sheet seam welding done
+UF0700,UF,10,READY,Stage IX Attending of leftover work and rectification of weld defects
+UF0810,UF,11,READY,Stage X  Manual Welding of Backpieces at Bottom side of underframe
+UF0820,UF,12,READY,Stage XI Supporting members are welded at Topside of underframe
+UF0900,UF,13,READY,Stage XII  Final Inspection and attending of leftover work
+SH0110,SH,1,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0120,SH,2,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0130,SH,3,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0140,SH,4,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0150,SH,5,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0160,SH,6,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0170,SH,7,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0180,SH,8,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0190,SH,9,READY,Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )
+SH0200,SH,10,READY,Stage-II Final Repair & Leakage testing

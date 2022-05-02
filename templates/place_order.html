@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% block title %}Place_Order{% endblock title %}
+{% block body %}
+
+<div class="container px-4 mt-5"><br>
+    
+     <h1 class="text-3xl text-center leading-8 font-bold tracking-tight text-green-700 ">Job Scheduling</h1>
+ <div>
+<div class="container"><br>
+    <form class="row g-3 pt-2"  method="post" action="/place_order">
+        {% csrf_token %}
+        <div class="col-md-6">
+            <label for="OR_no." class="form-label">Order Reference No.</label>
+            <input type="text" class="form-control" id="OR_no." name="OR_no" placeholder="Order Reference No">
+        </div>
+        <div class="col-md-6">
+            <label for="variant" class="form-label">Variant</label>
+            <select id="variant" class="form-select" name="variant">
+                <option selected>Select Variant</option>
+                <option value="LWSCZAC (2nd Class AC Chair Car)">LWSCZAC (2nd Class AC Chair Car)</option>
+                <option value="LWFCZAC (Executive Class AC Chair Car)">LWFCZAC (Executive Class AC Chair Car)</option>
+                <option value="LWACCN (AC-3Tier)">LWACCN (AC-3 tier)</option>
+                <option value="HUMSAFAR (AC-3Tier)">HUMSAFAR (AC-3Tier)</option>
+                <option value="LWACCW (AC-2 Tier)">LWACCW (AC-2 Tier)</option>
+                <option value="LWSCN (Non-AC Sleeper)">LWSCN (Non-AC Sleeper)</option>
+                <option value="LS (GS/EOG 100 SEATER)">LS (GS/EOG 100 SEATER)</option>
+                <option value="LWSDD (Deendayalu)">LWSDD (Deendayalu)</option>
+                <option value="LWS (Antyodaya Coach)">LWS (Antyodaya Coach)</option>
+                <option value="LWLRRM (450KVA Power Car)">LWLRRM (450KVA Power Car)</option>
+                <option value="LWLRRM (750KVA Power Car)">LWLRRM (750KVA Power Car)</option>
+                <option value="LDSLR (Under Slung Luggage Cum brake Van)">LDSLR (Under Slung Luggage Cum brake Van)</option>
+                <option value="LSLRD with DA set (Luggage Cum brake van)">LSLRD with DA set (Luggage Cum brake van)</option>
+                <option value="LWCBAC (AC Buffet Car)">LWCBAC (AC Buffet Car)</option>
+                <option value="LWSCZ (2nd Class Non-AC Chair Car)">LWSCZ (2nd Class Non-AC Chair Car)</option>
+                <option value="TRC (AC Track recording Car)">TRC (AC Track recording Car)</option>
+                <option value="TRSC (AC track recording staff Car)">TRSC (AC track recording staff Car)</option>
+                <option value="LWFAC (AC 1st Class)">LWFAC (AC 1st Class)</option>
+                <option value="LFCWAC Composite (FAC+AC2T)">LFCWAC Composite (FAC+AC2T)</option>
+                <option value="LVPH (LHB Parcel Van)">LVPH (LHB Parcel Van)</option>
+                <option value="LWACCNE (Gareeb Rath AC Sleeper Coach)">LWACCNE (Gareeb Rath AC Sleeper Coach)</option>
+                <option value="LWS-AC (AC- General)">LWS-AC (AC- General)</option>
+            </select>
+        </div>
+        <script>
+            $('.datepicker').datepicker();
+        </script>
+        
+        <div class ="col-md-6" >
+            <label class="md-form md-outline input-with-post-icon datepicker" for="start_date">Start Date</label>
+            <input placeholder="Select date" type="date" id="start_date" class="form-control" name ="start_date">
+            <i class="fas fa-calendar input-prefix" tabindex=0></i>
+        </div>
+        <div class ="col-md-6" >
+            <label class="md-form md-outline input-with-post-icon datepicker" for="end_date">End Date</label>
+            <input placeholder="Select date" type="date" id="end_date" class="form-control" name ="end_date">
+            <i class="fas fa-calendar input-prefix" tabindex=0></i>
+        </div>
+        <div class="col-md-6">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity no.">
+        </div>
+        <div class="col-md-6">
+            <label for="priority" class="form-label">Priority</label>
+            <input type="number" class="form-control" id="priority" name="priority" placeholder="Enter Priotity no.">
+        </div>
+        
+        <div class="grid grid-cols-1 gap-4 place-items-center">
+            <button type="submit" class="btn btn-primary px-4 ">Submit</button>
+        </div>
+    </form>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+        <div class="col">
+            <div class="card shadow-md">
+            <h5 class="text-left text-blue-900 font-bold text-2xl text-center my-3">Component List</h5>
+                <div class="grid grid-cols-3 gap-4 place-items-center">
+                    <button type="submit" readonly class="btn btn-primary" onclick="window.location.href='/operation_details'">View List</button>
+                    <button type="submit" readonly class="btn btn-primary" >Edit</button>
+                    <button type="submit" readonly class="btn btn-primary" >Accept</button><br>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-md">
+                <h5 class="text-left text-blue-900 font-bold text-2xl text-center my-3">Machine List</h5>
+                <div class="grid grid-cols-3 gap-4 place-items-center">
+                    <button type="submit" readonly class="btn btn-primary" onclick="window.location.href='/machine_details'">View List</button>
+                    <button type="submit" readonly class="btn btn-primary" >Edit</button>
+                    <button type="submit" readonly class="btn btn-primary" >Accept</button><br>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">S No.</th>
+                <th scope="col">Order Ref No.</th>
+                <th scope="col">Variant</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Priority</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if orders|length > 0 %}    
+                {% for order in orders %}
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td>{{order.orderRefNo}}</td>
+                        <td>{{order.orderVariant}}</td>
+                        <td>{{order.orderStartDate}}</td>
+                        <td>{{order.orderEndDate}}</td>
+                        <td>{{order.orderQuantity}}</td>
+                        <td>{{order.orderPriority}}</td>
+                        <td>
+                            <!-- <a href="/update/{{forloop.counter}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Update</button> -->
+                            <a href="/delete/{{order.sno}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+    <form class="row g-3"  action="/generate_schedule">
+        <div class="grid grid-cols-1 gap-4 place-items-center">
+            <button type="submit" class="btn btn-primary" style="text-align:center">Generate Schedule</button>
+        </div>
+    </form>
+</div>
+
+{% endblock body %}

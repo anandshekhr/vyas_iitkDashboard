@@ -1,0 +1,37 @@
+Operation Name,Machine Name,Processing Time,Material Handling Time
+Stage-I SW Skeleton Tack Welding,SW0110,180,16
+Stage-II Robotic Spot Welding,SW0120,25,15
+Stage-III SW skeletion Robotic Mig Welding,SW0130,25,11
+Stage-IV Roof Bearer Robotic Arc Spot welding,SW0140,1,0
+Stage-V SW & Roof Bearer Robotic welding,SW0150,115,11
+Stage-VI Backpiece Leftover welding,SW0160,180,12
+Stage I Machine- B&C machine,RF0110,220,12
+Stage II Manual JIG 9.2,RF0120,178,12
+Stage III Roof Robotic Welding Station,RF0130,190,16
+Stage IV Roof Acceptance Stand and left over Welding station(13.0),RF0140,180,16
+Stage V Roof Acceptance Stand and left over Welding station(11.0),RF0150,128,18
+"Stage I Fabrication of Sub assemblies at Tacking Jigs & Fixtures , Framework tacking of Endwall Complete",EW0110,194,5
+Stage II Robotic Endwall Welding Station,EW0120,16,9
+Stage III Manual Repair stand,EW0130,2,8
+"Stage I Fab:Bat Box SubAssy, Pump Mt Brkt, Elec RBC channel & other cross member SubAssys",UF0110,170,20
+"Stage II Framing, fitment & welding with BO front Part  of Underframe middle parts","UF0210,UF0220",220,17
+Stage III Robotic Welding upside of Underframe,UF0310,263,27
+Stage IV  Robotic Welding downside of Underframe,UF0320,263,28
+Stage V Repair & leftover work by manual welding Top Side,UF0400,330,29
+Stage VI Corrugated Sheets Tack welded  to Underframe frame work,UF0500,420,29
+Stage VII Robotic Corrugated sheet stitch welding done,UF0610,493,27
+Stage VIII Robotic Corrugated sheet seam welding done,UF0620,253,27
+Stage IX Attending of leftover work and rectification of weld defects,UF0700,417,18
+Stage X  Manual Welding of Backpieces at Bottom side of underframe,UF0810,390,19
+Stage XI Supporting members are welded at Topside of underframe,UF0820,1,19
+Stage XII  Final Inspection and attending of leftover work,UF0900,1,8
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0110,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0120,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0130,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0140,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0150,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0160,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0170,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0180,480,72
+Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II ),SH0190,480,72
+Stage-II Final Repair & Leakage testing,SH0200,120,0

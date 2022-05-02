@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% block title %}HMI{% endblock title %}
+{% block body %}
+
+
+  <div class="container px-4 mt-5"><br>
+   
+    <p class="mt-2 text-3xl text-center leading-8 font-bold tracking-tight text-green-700 ">
+      Digital-Twin - Shop Floor
+    </p> <br>
+   <div class="container"> 
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+        <div class="col">
+          <div class="card shadow-md">
+              <img src="/static/images/LHBCoachShellManufacture.png" class="d-block w-100 h-100" alt="...">
+              <div class="card-body">
+                  <p class="card-text"></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-red-600 "style = "color:#B22234;"><b>LHB Coach Shell Manufacture</b></small>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-md"><br><br><br>
+            <img src="/static/images/shellShopLayout.png" class="d-block w-100 h-100" alt="...">
+            <div class="card-body">
+              <p class="card-text"></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-red-600" style = "color:#B22234;"><b>Shell Shop Layout</b></small>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5">
+      
+    <div class="row">
+      <div class="col-3">
+        <div class="container-fluid text-center">
+          <h5 class="pb-2 " style=" font-size: 18px; color:#3C3B6E;" >Side Wall Fabrication</h5>
+          <div id="myCarousel2" class="carousel slide" data-bs-ride="carousel" data-interval="2500">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></button>
+              </div>
+            <!-- Indicators -->
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h6 style=" font-size: 14px; color:#B22234;">Step1. Manual Tack Welding Station</h6>
+                <img  class = "img-fluid" src="/static/images/side1.png" alt="side 1" >
+                {% comment %} <p style=" font-size: 14px">Tack Welding Of Side Wall Skin With Frame</p> {% endcomment %}
+              </div>
+              <div class="carousel-item">
+                <h6 style=" font-size: 14px; color:#B22234;">Step2. Robotic Welding Station</h6>
+                <img  class = "img-fluid" src="/static/images/side2.png" alt="side 2" >
+                {% comment %} <p style=" font-size: 14px">Full Mig Welding Of Frame Members</p> {% endcomment %}
+              
+              </div>
+              <div class="carousel-item">
+                <h6  style=" font-size: 14px; color:#B22234;">Step3. Robotic Spot Welding Station</h6>
+                <img  class = "img-fluid" src="/static/images/side3.png" alt="side 3" >
+                {% comment %} <p style=" font-size: 14px">Spot Welding Of Side Wall Skin With Frame</p> {% endcomment %}
+              </div>
+              <div class="carousel-item">
+                <h6 style=" font-size: 14px; color:#B22234;">Step4. Robotic Roof Bearer Station</h6>
+                <img  class = "img-fluid" src="/static/images/side4.png" alt="side 4" >
+                {% comment %} <p style=" font-size: 14px">Complete Mig And Spot Welding Of Stiffner With Carline</p> {% endcomment %}
+              </div>
+              <div class="carousel-item">
+                <h6 style=" font-size: 14px; color:#B22234;">Step5. Sidewall Roof Bearer Welding</h6>
+                <img  class = "img-fluid" src="/static/images/side5.png" alt="side 5">
+                {% comment %} <p style=" font-size: 14px">Welding Of Roof Bearer With Sidewall</p> {% endcomment %}
+              </div>
+              <div class="carousel-item">
+                <h6 style=" font-size: 14px; color:#B22234;">Step6. Manual Welding Station</h6>
+                <br>
+                <img  class = "img-fluid" src="/static/images/side6.png" alt="side 6">
+                {% comment %} <p style=" font-size: 14px">Back Piece Welding And Completion Of Work</p> {% endcomment %}
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" type = "button" href="#myCarousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" type ="button" href="#myCarousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-3">
+        <div class="container-fluid text-center">
+          <h5 class="pb-2 " style=" font-size: 18px; color:#3C3B6E;" > Roof Fabrication</h5>
+          <div id="myCarousel3" class="carousel slide" data-bs-ride="carousel" data-interval="2500">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+            </div>
+    
+            <!-- Indicators -->
+          
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h6  style=" font-size: 14px; color:#B22234;">Step1. Robotic Spot Welding Station</h6>
+                <img  class = "img-fluid" src="/static/images/top1.png" alt="top 1" >
+                {% comment %} <p style=" font-size: 14px">Tack Welding Of Side Wall Skin With Frame</p> {% endcomment %}
+              </div>
+              <div class="carousel-item">
+                <h6 style=" font-size: 14px; color:#B22234;"> Step2. Tack Welding Station </h6>
+                <img  class = "img-fluid" src="/static/images/top2.png" alt="top 2" >
+                {% comment %} <p style=" font-size: 14px">Spot Welded Roof Sheet Tacked With Front Sheet </p> {% endcomment %}
+              </div>
+              <div class="carousel-item">
+                <h6 style=" font-size: 14px; color:#B22234;">Step3. Robotic Mig Welding Station</h6>
+                <img  class = "img-fluid" src="/static/images/top2.png" alt="top 3" >
+                {% comment %} <p style=" font-size: 14px">Robotic Mig Welding of Roof Sheet and Back Pice</p> {% endcomment %}
+              </div>
+              <div class="carousel-item">
+                <h6 style=" font-size: 14px; color:#B22234;">Step4. Manual Roof Completion Station</h6>
+                <img  class = "img-fluid" src="/static/images/top2.png" alt="top 4" >
+                {% comment %} <p style=" font-size: 14px">Manual Touch Up for Complete Welding of Roof Sheet and  Carline</p> {% endcomment %}
+              </div>
+          
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" type = "button" href="#myCarousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" type ="button" href="#myCarousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-3">
+        <div class="container-fluid text-center">
+        <h5 class="pb-2 " style=" font-size: 18px; color:#3C3B6E;" >Under Frame Fabrication</h5>
+        <div id="myCarousel4" class="carousel slide" data-bs-ride="carousel" data-interval="2500">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"></button>
+          </div>
+
+  <!-- Indicators -->
+      
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h6 style=" font-size: 14px; color:#B22234;">Step1. Welding of Front Part Station</h6>
+            <img  class = "img-fluid" src="/static/images/under1.png" alt="under 1" >
+            {% comment %} <p style=" font-size: 14px">Manual Tack Welding of Cross Member and Sub Assembly to Made A Front Part</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step2. Robotic Welding of Front Part Station</h6>
+            <img  class = "img-fluid" src="/static/images/under2.png" alt="under 2" >
+            {% comment %} <p style=" font-size: 14px">Robotic Full Welding of Cross Member and Sub Assembly To Made A Front Part</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step3. Tack Welding Station Of Middle Part</h6>
+            <img  class = "img-fluid" src="/static/images/under3.png" alt="under 3" >
+            {% comment %} <p style=" font-size: 14px">Tack Welding of Front Part With Cross Member and Sub Assembly to Made A Middle Part</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step4. Robotic Full Welding Station Of Middle Part</h6>
+            <img  class = "img-fluid" src="/static/images/under4.png" alt="under 4" >
+            {% comment %} <p style=" font-size: 14px">Robotic Full Welding  of Midlle Part</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step5. Welding of Trough Floor Station</h6>
+            <img  class = "img-fluid" src="/static/images/under5.png" alt="under 5">
+            {% comment %} <p style=" font-size: 14px">Manual Tack Welding of Floor Sheet on Middle Part</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step6. Robotic Welding of Trough Floor Station  </h6>
+            <img  class = "img-fluid" src="/static/images/under6.png" alt="under 6">
+            {% comment %} <p style=" font-size: 14px">Full Welding of Floor Sheet From Back Side with Middle Part</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step7. Plug welding of Trough Floor Station </h6>
+            <img  class = "img-fluid" src="/static/images/under7.png" alt="under 7">
+            {% comment %} <p style=" font-size: 14px">Full Welding of Floor Sheet on Top Side and Plug Welding</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step8. Manual Welding of Under slung Components  </h6>
+            <img  class = "img-fluid" src="/static/images/under8.png" alt="under 8">
+            {% comment %} <p style=" font-size: 14px">Manual Welding of Under Slung Parts and Console Bracket  etc.</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step9. Manual Welding  of Channel Part Station</h6>
+            <img  class = "img-fluid" src="/static/images/under9.png" alt="under 9">
+            {% comment %} <p style=" font-size: 14px">Manual Welding  of Channel and Bracket at Top Side of Floor</p> {% endcomment %}
+          </div>
+
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step10. Completion Station</h6>
+            <img  class = "img-fluid" src="/static/images/under10.png" alt="under 10">
+            {% comment %} <p style=" font-size: 14px">Finishing and Completion Manually</p> {% endcomment %}
+          </div>
+
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" type = "button" href="#myCarousel4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" type ="button" href="#myCarousel4" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    </div>
+
+
+
+    <div class="col-3">
+        <div class="container-fluid text-center">
+        <h5 class="pb-2 " style=" font-size: 18px; color:#3C3B6E;" > End Wall Fabrication</h5>
+        <div id="myCarousel5" class="carousel slide" data-bs-ride="carousel" data-interval="2500">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          </div>
+
+  <!-- Indicators -->
+      
+        <div class="carousel-inner">
+          <div  class="carousel-item active">
+            <h6 style=" font-size: 14px; color:#B22234;"> Step1. Tack Welding Station </h6>
+            <img  class = "img-fluid" src="/static/images/end1.png" alt="end 1" >
+            {% comment %} <p style=" font-size: 14px">Tacking of Member Part and Assembly at Different Stages</p> {% endcomment %}
+          </div>
+          <div class="carousel-item">
+            <h6 style=" font-size: 14px; color:#B22234;">Step2. Robotic Full Welding Station</h6>
+            <img  class = "img-fluid" src="/static/images/end2.png" alt="end 2" >
+            {% comment %} <p style=" font-size: 14px">Robotic Welding of Tacked Components of End Wall Part</p> {% endcomment %}
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" type = "button" href="#myCarousel5" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" type ="button" href="#myCarousel5" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div> 
+</div> 
+<br>
+<div class="container mt-3 mb-3 text-center">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+      <div class="col">
+        <div class="card shadow-md">
+        <h5 class="text-green-600 text-xl" style = "color:#3C3B6E;"> Work Centers for Shell Manufacture</h5><br>
+            <img src="/static/images/table1.png" class="d-block w-100 h-100" alt="...">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-md">
+         <h5 class="text-green-600 text-xl" style = "color:#3C3B6E;">Details of Machines & Controllers</h5><br>
+          <img src="/static/images/table2.png" class="d-block w-100 h-100" alt="...">  
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </div>  
+</div>    
+<div class="container ">
+    <div class="col">
+      <div class="card shadow-md">
+       {% comment %} <h5 class="text-green-600 text-xl">Details of Machines & Controllers</h5><br> {% endcomment %}
+        <img src="/static/images/proposed arch.png" class=" center d-block w-100 h-100" alt="...">  
+      </div>
+    </div>
+</div> 
+{% endblock body %}

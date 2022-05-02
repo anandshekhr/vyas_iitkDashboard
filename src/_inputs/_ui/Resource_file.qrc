@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="Images_MainWindow">
+    <file>Icons/Analytics.PNG</file>
+    <file>Icons/Bill of Materials.png</file>
+    <file>Icons/BOM.PNG</file>
+    <file>Icons/Digital_Twin.PNG</file>
+    <file>Icons/Help.png</file>
+    <file>Icons/IITK_Logo.png</file>
+    <file>Icons/Inventory.PNG</file>
+    <file>Icons/Job_schedule.PNG</file>
+    <file>Icons/Machine_details.PNG</file>
+    <file>Icons/MCF_Raebareli_Logo.jpg</file>
+    <file>Icons/RTM.PNG</file>
+  </qresource>
+  <qresource prefix="logoPage">
+    <file>arrow-112-24.ico</file>
+  </qresource>
+  <qresource prefix="place order">
+    <file>Print_preview.jpg</file>
+    <file>minus-7-24.png</file>
+    <file>printer-3-24.png</file>
+    <file>refresh-24.png</file>
+    <file>save-24.png</file>
+    <file>settings-4-24.png</file>
+  </qresource>
+  <qresource prefix="icons_secondWindow">
+    <file>secondWindow_icons/conveyor.png</file>
+    <file>secondWindow_icons/homepage.png</file>
+    <file>secondWindow_icons/inventory (1).png</file>
+    <file>secondWindow_icons/manufacturing (1).png</file>
+    <file>secondWindow_icons/monitor.png</file>
+    <file>secondWindow_icons/press.png</file>
+    <file>secondWindow_icons/question (1).png</file>
+    <file>secondWindow_icons/schedule.png</file>
+    <file>secondWindow_icons/spyware.png</file>
+  </qresource>
+</RCC>

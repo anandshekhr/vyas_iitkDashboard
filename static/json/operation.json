@@ -1,0 +1,1579 @@
+{
+    "Stage-I SW Skeleton Tack Welding": {
+        "name": "Stage-I SW Skeleton Tack Welding",
+        "inputs": [
+            {
+                "name": "SIDE WALL SHEET",
+                "part_no": "LE14251",
+                "qpc": 1,
+                "assembly_code": "a"
+            },
+            {
+                "name": "SIDE WALL FRAME WORK LHS",
+                "part_no": "LE14103 b",
+                "qpc": 1,
+                "assembly_code": "b"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "LHB Side Wall LHS",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "SW0110"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 180,
+            "LWFCZAC (Executive Class AC Chair Car)": 190,
+            "LWACCN (AC-3Tier)": 185,
+            "HUMSAFAR (AC-3Tier)": 200,
+            "LWACCW (AC-2 Tier)": 215,
+            "LWSCN (Non-AC Sleeper)": 180,
+            "LS (GS/EOG 100 SEATER)": 185,
+            "LWSDD (Deendayalu)": 195,
+            "LWS (Antyodaya Coach)": 205,
+            "LWLRRM (450KVA Power Car)": 215,
+            "LWLRRM (750KVA Power Car)": 230,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 235,
+            "LSLRD with DA set (Luggage Cum brake van)": 220,
+            "LWCBAC (AC Buffet Car)": 215,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 230,
+            "TRC (AC Track recording Car)": 225,
+            "TRSC (AC track recording staff Car)": 205,
+            "LWFAC (AC 1st Class)": 200,
+            "LFCWAC Composite (FAC+AC2T)": 180,
+            "LVPH (LHB Parcel Van)": 240,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 235,
+            "LWS-AC (AC- General)": 215
+        }
+    },
+    "Stage-II Robotic Spot Welding": {
+        "name": "Stage-II Robotic Spot Welding",
+        "inputs": [
+            {
+                "name": "LHB Side Wall LHS",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "LHB Side Wall LHS",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "SW0120"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 225,
+            "LWFCZAC (Executive Class AC Chair Car)": 215,
+            "LWACCN (AC-3Tier)": 215,
+            "HUMSAFAR (AC-3Tier)": 205,
+            "LWACCW (AC-2 Tier)": 220,
+            "LWSCN (Non-AC Sleeper)": 205,
+            "LS (GS/EOG 100 SEATER)": 215,
+            "LWSDD (Deendayalu)": 215,
+            "LWS (Antyodaya Coach)": 220,
+            "LWLRRM (450KVA Power Car)": 225,
+            "LWLRRM (750KVA Power Car)": 215,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 225,
+            "LSLRD with DA set (Luggage Cum brake van)": 205,
+            "LWCBAC (AC Buffet Car)": 220,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 225,
+            "TRC (AC Track recording Car)": 205,
+            "TRSC (AC track recording staff Car)": 215,
+            "LWFAC (AC 1st Class)": 225,
+            "LFCWAC Composite (FAC+AC2T)": 220,
+            "LVPH (LHB Parcel Van)": 215,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 205,
+            "LWS-AC (AC- General)": 225
+        }
+    },
+    "Stage-III SW skeletion Robotic Mig Welding": {
+        "name": "Stage-III SW skeletion Robotic Mig Welding",
+        "inputs": [
+            {
+                "name": "LHB Side Wall LHS",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "LHB Side Wall LHS",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "SW0130"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 210,
+            "LWFCZAC (Executive Class AC Chair Car)": 225,
+            "LWACCN (AC-3Tier)": 215,
+            "HUMSAFAR (AC-3Tier)": 210,
+            "LWACCW (AC-2 Tier)": 220,
+            "LWSCN (Non-AC Sleeper)": 230,
+            "LS (GS/EOG 100 SEATER)": 215,
+            "LWSDD (Deendayalu)": 230,
+            "LWS (Antyodaya Coach)": 220,
+            "LWLRRM (450KVA Power Car)": 210,
+            "LWLRRM (750KVA Power Car)": 230,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 215,
+            "LSLRD with DA set (Luggage Cum brake van)": 210,
+            "LWCBAC (AC Buffet Car)": 225,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 230,
+            "TRC (AC Track recording Car)": 215,
+            "TRSC (AC track recording staff Car)": 210,
+            "LWFAC (AC 1st Class)": 220,
+            "LFCWAC Composite (FAC+AC2T)": 220,
+            "LVPH (LHB Parcel Van)": 215,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 210,
+            "LWS-AC (AC- General)": 230
+        }
+    },
+    "Stage-IV Roof Bearer Robotic Arc Spot welding": {
+        "name": "Stage-IV Roof Bearer Robotic Arc Spot welding",
+        "inputs": [
+            {
+                "name": "CARLINE",
+                "part_no": "LE14107 b",
+                "qpc": 1,
+                "assembly_code": "d"
+            },
+            {
+                "name": "LHB Side Wall LHS",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "E",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "E"
+            }
+        ],
+        "machine": [
+            "SW0140"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 1,
+            "LWFCZAC (Executive Class AC Chair Car)": 1,
+            "LWACCN (AC-3Tier)": 1,
+            "HUMSAFAR (AC-3Tier)": 1,
+            "LWACCW (AC-2 Tier)": 1,
+            "LWSCN (Non-AC Sleeper)": 1,
+            "LS (GS/EOG 100 SEATER)": 1,
+            "LWSDD (Deendayalu)": 1,
+            "LWS (Antyodaya Coach)": 1,
+            "LWLRRM (450KVA Power Car)": 1,
+            "LWLRRM (750KVA Power Car)": 1,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 1,
+            "LSLRD with DA set (Luggage Cum brake van)": 1,
+            "LWCBAC (AC Buffet Car)": 1,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 1,
+            "TRC (AC Track recording Car)": 1,
+            "TRSC (AC track recording staff Car)": 1,
+            "LWFAC (AC 1st Class)": 1,
+            "LFCWAC Composite (FAC+AC2T)": 1,
+            "LVPH (LHB Parcel Van)": 1,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 1,
+            "LWS-AC (AC- General)": 1
+        }
+    },
+    "Stage-V SW & Roof Bearer Robotic welding": {
+        "name": "Stage-V SW & Roof Bearer Robotic welding",
+        "inputs": [
+            {
+                "name": "E",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "E"
+            },
+            {
+                "name": "Welding Parts Side wall LHS",
+                "part_no": "LE14196 c",
+                "qpc": 1,
+                "assembly_code": "F"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Side wall Left complete",
+                "part_no": "LE14101 e",
+                "qpc": 1,
+                "assembly_code": "4"
+            }
+        ],
+        "machine": [
+            "SW0150"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 360,
+            "LWFCZAC (Executive Class AC Chair Car)": 325,
+            "LWACCN (AC-3Tier)": 345,
+            "HUMSAFAR (AC-3Tier)": 315,
+            "LWACCW (AC-2 Tier)": 320,
+            "LWSCN (Non-AC Sleeper)": 325,
+            "LS (GS/EOG 100 SEATER)": 350,
+            "LWSDD (Deendayalu)": 340,
+            "LWS (Antyodaya Coach)": 335,
+            "LWLRRM (450KVA Power Car)": 305,
+            "LWLRRM (750KVA Power Car)": 310,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 320,
+            "LSLRD with DA set (Luggage Cum brake van)": 330,
+            "LWCBAC (AC Buffet Car)": 355,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 360,
+            "TRC (AC Track recording Car)": 320,
+            "TRSC (AC track recording staff Car)": 310,
+            "LWFAC (AC 1st Class)": 305,
+            "LFCWAC Composite (FAC+AC2T)": 335,
+            "LVPH (LHB Parcel Van)": 310,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 305,
+            "LWS-AC (AC- General)": 345
+        }
+    },
+    "Stage-VI Backpiece Leftover welding": {
+        "name": "Stage-VI Backpiece Leftover welding",
+        "inputs": [
+            {
+                "name": "Welding Parts Side wall LHS",
+                "part_no": "LE14196 c",
+                "qpc": 1,
+                "assembly_code": "f"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Welding Parts Side wall LHS",
+                "part_no": "LE14196 c",
+                "qpc": 1,
+                "assembly_code": "F"
+            }
+        ],
+        "machine": [
+            "SW0160"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 200,
+            "LWFCZAC (Executive Class AC Chair Car)": 180,
+            "LWACCN (AC-3Tier)": 195,
+            "HUMSAFAR (AC-3Tier)": 185,
+            "LWACCW (AC-2 Tier)": 200,
+            "LWSCN (Non-AC Sleeper)": 180,
+            "LS (GS/EOG 100 SEATER)": 200,
+            "LWSDD (Deendayalu)": 195,
+            "LWS (Antyodaya Coach)": 185,
+            "LWLRRM (450KVA Power Car)": 180,
+            "LWLRRM (750KVA Power Car)": 185,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 195,
+            "LSLRD with DA set (Luggage Cum brake van)": 180,
+            "LWCBAC (AC Buffet Car)": 200,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 195,
+            "TRC (AC Track recording Car)": 180,
+            "TRSC (AC track recording staff Car)": 200,
+            "LWFAC (AC 1st Class)": 185,
+            "LFCWAC Composite (FAC+AC2T)": 200,
+            "LVPH (LHB Parcel Van)": 195,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 180,
+            "LWS-AC (AC- General)": 200
+        }
+    },
+    "Stage I Fabrication of Sub assemblies at Tacking Jigs & Fixtures , Framework tacking of Endwall Complete": {
+        "name": "Stage I Fabrication of Sub assemblies at Tacking Jigs & Fixtures , Framework tacking of Endwall Complete",
+        "inputs": [
+            {
+                "name": "ARCH COMPLETE",
+                "part_no": "1 10113.0.20.120.024   A",
+                "qpc": 1,
+                "assembly_code": "a"
+            },
+            {
+                "name": "ARCH COMPLETE",
+                "part_no": "1 10113.0.20.120.025   A",
+                "qpc": 1,
+                "assembly_code": "b"
+            },
+            {
+                "name": "SILL COMPLETE",
+                "part_no": "1 10113.0.20.120.020   dR",
+                "qpc": 1,
+                "assembly_code": "c"
+            },
+            {
+                "name": "RAM PILLAR COMPLETE",
+                "part_no": "2 10113.0.20.120.011   A",
+                "qpc": 1,
+                "assembly_code": "d"
+            },
+            {
+                "name": "RAM PILLAR COMPLETE",
+                "part_no": "2 10113.0.20.120.012   A",
+                "qpc": 1,
+                "assembly_code": "e"
+            },
+            {
+                "name": "RAM FLANGE COMPLETE",
+                "part_no": "2 10113.0.20.120.013   C",
+                "qpc": 1,
+                "assembly_code": "f"
+            },
+            {
+                "name": "FRAME WORK END WALL",
+                "part_no": "1 10113.0.20.120.002   I",
+                "qpc": 1,
+                "assembly_code": "g"
+            },
+            {
+                "name": "End wall sheets",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "h"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Output LHB END Wall",
+                "part_no": "1 10113.0.20.120.001G",
+                "qpc": 1,
+                "assembly_code": "I"
+            }
+        ],
+        "machine": [
+            "EW0110"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 215,
+            "LWFCZAC (Executive Class AC Chair Car)": 185,
+            "LWACCN (AC-3Tier)": 185,
+            "HUMSAFAR (AC-3Tier)": 220,
+            "LWACCW (AC-2 Tier)": 220,
+            "LWSCN (Non-AC Sleeper)": 220,
+            "LS (GS/EOG 100 SEATER)": 185,
+            "LWSDD (Deendayalu)": 180,
+            "LWS (Antyodaya Coach)": 180,
+            "LWLRRM (450KVA Power Car)": 180,
+            "LWLRRM (750KVA Power Car)": 195,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 205,
+            "LSLRD with DA set (Luggage Cum brake van)": 205,
+            "LWCBAC (AC Buffet Car)": 215,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 215,
+            "TRC (AC Track recording Car)": 195,
+            "TRSC (AC track recording staff Car)": 195,
+            "LWFAC (AC 1st Class)": 200,
+            "LFCWAC Composite (FAC+AC2T)": 215,
+            "LVPH (LHB Parcel Van)": 220,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 180,
+            "LWS-AC (AC- General)": 200
+        }
+    },
+    "Stage II Robotic Endwall Welding Station": {
+        "name": "Stage II Robotic Endwall Welding Station",
+        "inputs": [
+            {
+                "name": "Output LHB END Wall",
+                "part_no": "1 10113.0.20.120.001G",
+                "qpc": 1,
+                "assembly_code": "I"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Output LHB END Wall",
+                "part_no": "1 10113.0.20.120.001G",
+                "qpc": 1,
+                "assembly_code": "I"
+            }
+        ],
+        "machine": [
+            "EW0120"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 230,
+            "LWFCZAC (Executive Class AC Chair Car)": 230,
+            "LWACCN (AC-3Tier)": 205,
+            "HUMSAFAR (AC-3Tier)": 215,
+            "LWACCW (AC-2 Tier)": 205,
+            "LWSCN (Non-AC Sleeper)": 220,
+            "LS (GS/EOG 100 SEATER)": 225,
+            "LWSDD (Deendayalu)": 210,
+            "LWS (Antyodaya Coach)": 210,
+            "LWLRRM (450KVA Power Car)": 215,
+            "LWLRRM (750KVA Power Car)": 220,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 230,
+            "LSLRD with DA set (Luggage Cum brake van)": 230,
+            "LWCBAC (AC Buffet Car)": 225,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 225,
+            "TRC (AC Track recording Car)": 210,
+            "TRSC (AC track recording staff Car)": 210,
+            "LWFAC (AC 1st Class)": 225,
+            "LFCWAC Composite (FAC+AC2T)": 220,
+            "LVPH (LHB Parcel Van)": 230,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 215,
+            "LWS-AC (AC- General)": 210
+        }
+    },
+    "Stage III Manual Repair stand": {
+        "name": "Stage III Manual Repair stand",
+        "inputs": [
+            {
+                "name": "Output LHB END Wall",
+                "part_no": "1 10113.0.20.120.001G",
+                "qpc": 1,
+                "assembly_code": "I"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "End wall Complete",
+                "part_no": "1.10113.0.20.120.001",
+                "qpc": 1,
+                "assembly_code": "5"
+            }
+        ],
+        "machine": [
+            "EW0130"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 2,
+            "LWFCZAC (Executive Class AC Chair Car)": 2,
+            "LWACCN (AC-3Tier)": 2,
+            "HUMSAFAR (AC-3Tier)": 2,
+            "LWACCW (AC-2 Tier)": 2,
+            "LWSCN (Non-AC Sleeper)": 2,
+            "LS (GS/EOG 100 SEATER)": 2,
+            "LWSDD (Deendayalu)": 2,
+            "LWS (Antyodaya Coach)": 2,
+            "LWLRRM (450KVA Power Car)": 2,
+            "LWLRRM (750KVA Power Car)": 2,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 2,
+            "LSLRD with DA set (Luggage Cum brake van)": 2,
+            "LWCBAC (AC Buffet Car)": 2,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 2,
+            "TRC (AC Track recording Car)": 2,
+            "TRSC (AC track recording staff Car)": 2,
+            "LWFAC (AC 1st Class)": 2,
+            "LFCWAC Composite (FAC+AC2T)": 2,
+            "LVPH (LHB Parcel Van)": 2,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 2,
+            "LWS-AC (AC- General)": 2
+        }
+    },
+    "Stage I Machine- B&C machine": {
+        "name": "Stage I Machine- B&C machine",
+        "inputs": [
+            {
+                "name": "Roof sheeting complete",
+                "part_no": "RCF-RBL-Drg-39",
+                "qpc": 1,
+                "assembly_code": "a"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Roof sheeting complete",
+                "part_no": "RCF-RBL-Drg-39",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "machine": [
+            "RF0110"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 240,
+            "LWFCZAC (Executive Class AC Chair Car)": 240,
+            "LWACCN (AC-3Tier)": 215,
+            "HUMSAFAR (AC-3Tier)": 200,
+            "LWACCW (AC-2 Tier)": 210,
+            "LWSCN (Non-AC Sleeper)": 240,
+            "LS (GS/EOG 100 SEATER)": 220,
+            "LWSDD (Deendayalu)": 220,
+            "LWS (Antyodaya Coach)": 235,
+            "LWLRRM (450KVA Power Car)": 235,
+            "LWLRRM (750KVA Power Car)": 225,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 205,
+            "LSLRD with DA set (Luggage Cum brake van)": 200,
+            "LWCBAC (AC Buffet Car)": 200,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 210,
+            "TRC (AC Track recording Car)": 205,
+            "TRSC (AC track recording staff Car)": 225,
+            "LWFAC (AC 1st Class)": 220,
+            "LFCWAC Composite (FAC+AC2T)": 235,
+            "LVPH (LHB Parcel Van)": 210,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 215,
+            "LWS-AC (AC- General)": 200
+        }
+    },
+    "Stage II Manual JIG 9.2": {
+        "name": "Stage II Manual JIG 9.2",
+        "inputs": [
+            {
+                "name": "input for final roof arch complete",
+                "part_no": "LE16112 a",
+                "qpc": 1,
+                "assembly_code": "b"
+            },
+            {
+                "name": "Roof sheeting complete",
+                "part_no": "RCF-RBL-Drg-39",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "C",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "RF0120"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 210,
+            "LWFCZAC (Executive Class AC Chair Car)": 225,
+            "LWACCN (AC-3Tier)": 215,
+            "HUMSAFAR (AC-3Tier)": 210,
+            "LWACCW (AC-2 Tier)": 220,
+            "LWSCN (Non-AC Sleeper)": 230,
+            "LS (GS/EOG 100 SEATER)": 215,
+            "LWSDD (Deendayalu)": 230,
+            "LWS (Antyodaya Coach)": 220,
+            "LWLRRM (450KVA Power Car)": 210,
+            "LWLRRM (750KVA Power Car)": 230,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 215,
+            "LSLRD with DA set (Luggage Cum brake van)": 210,
+            "LWCBAC (AC Buffet Car)": 225,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 230,
+            "TRC (AC Track recording Car)": 215,
+            "TRSC (AC track recording staff Car)": 210,
+            "LWFAC (AC 1st Class)": 220,
+            "LFCWAC Composite (FAC+AC2T)": 220,
+            "LVPH (LHB Parcel Van)": 215,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 210,
+            "LWS-AC (AC- General)": 230
+        }
+    },
+    "Stage III Roof Robotic Welding Station": {
+        "name": "Stage III Roof Robotic Welding Station",
+        "inputs": [
+            {
+                "name": "C",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "C",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "RF0130"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 210,
+            "LWFCZAC (Executive Class AC Chair Car)": 185,
+            "LWACCN (AC-3Tier)": 185,
+            "HUMSAFAR (AC-3Tier)": 210,
+            "LWACCW (AC-2 Tier)": 195,
+            "LWSCN (Non-AC Sleeper)": 190,
+            "LS (GS/EOG 100 SEATER)": 205,
+            "LWSDD (Deendayalu)": 210,
+            "LWS (Antyodaya Coach)": 210,
+            "LWLRRM (450KVA Power Car)": 210,
+            "LWLRRM (750KVA Power Car)": 195,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 205,
+            "LSLRD with DA set (Luggage Cum brake van)": 205,
+            "LWCBAC (AC Buffet Car)": 210,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 210,
+            "TRC (AC Track recording Car)": 190,
+            "TRSC (AC track recording staff Car)": 195,
+            "LWFAC (AC 1st Class)": 200,
+            "LFCWAC Composite (FAC+AC2T)": 210,
+            "LVPH (LHB Parcel Van)": 205,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 180,
+            "LWS-AC (AC- General)": 200
+        }
+    },
+    "Stage IV Roof Acceptance Stand and left over Welding station(13.0)": {
+        "name": "Stage IV Roof Acceptance Stand and left over Welding station(13.0)",
+        "inputs": [
+            {
+                "name": "C",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            },
+            {
+                "name": "D",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "d"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "E",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "E"
+            }
+        ],
+        "machine": [
+            "RF0140"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 225,
+            "LWFCZAC (Executive Class AC Chair Car)": 210,
+            "LWACCN (AC-3Tier)": 210,
+            "HUMSAFAR (AC-3Tier)": 185,
+            "LWACCW (AC-2 Tier)": 195,
+            "LWSCN (Non-AC Sleeper)": 195,
+            "LS (GS/EOG 100 SEATER)": 230,
+            "LWSDD (Deendayalu)": 225,
+            "LWS (Antyodaya Coach)": 230,
+            "LWLRRM (450KVA Power Car)": 210,
+            "LWLRRM (750KVA Power Car)": 210,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 195,
+            "LSLRD with DA set (Luggage Cum brake van)": 205,
+            "LWCBAC (AC Buffet Car)": 205,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 210,
+            "TRC (AC Track recording Car)": 210,
+            "TRSC (AC track recording staff Car)": 190,
+            "LWFAC (AC 1st Class)": 195,
+            "LFCWAC Composite (FAC+AC2T)": 200,
+            "LVPH (LHB Parcel Van)": 210,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 205,
+            "LWS-AC (AC- General)": 230
+        }
+    },
+    "Stage V Roof Acceptance Stand and left over Welding station(11.0)": {
+        "name": "Stage V Roof Acceptance Stand and left over Welding station(11.0)",
+        "inputs": [
+            {
+                "name": "E",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "E"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Roof Complete",
+                "part_no": "LE16100 f",
+                "qpc": 1,
+                "assembly_code": "6"
+            }
+        ],
+        "machine": [
+            "RF0150"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 125,
+            "LWFCZAC (Executive Class AC Chair Car)": 125,
+            "LWACCN (AC-3Tier)": 140,
+            "HUMSAFAR (AC-3Tier)": 140,
+            "LWACCW (AC-2 Tier)": 120,
+            "LWSCN (Non-AC Sleeper)": 120,
+            "LS (GS/EOG 100 SEATER)": 135,
+            "LWSDD (Deendayalu)": 125,
+            "LWS (Antyodaya Coach)": 125,
+            "LWLRRM (450KVA Power Car)": 125,
+            "LWLRRM (750KVA Power Car)": 140,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 120,
+            "LSLRD with DA set (Luggage Cum brake van)": 135,
+            "LWCBAC (AC Buffet Car)": 135,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 140,
+            "TRC (AC Track recording Car)": 140,
+            "TRSC (AC track recording staff Car)": 120,
+            "LWFAC (AC 1st Class)": 135,
+            "LFCWAC Composite (FAC+AC2T)": 120,
+            "LVPH (LHB Parcel Van)": 125,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 140,
+            "LWS-AC (AC- General)": 115
+        }
+    },
+    "Stage I Fab:Bat Box SubAssy, Pump Mt Brkt, Elec RBC channel & other cross member SubAssys": {
+        "name": "Stage I Fab:Bat Box SubAssy, Pump Mt Brkt, Elec RBC channel & other cross member SubAssys",
+        "inputs": [
+            {
+                "name": "Provisions for 450L water Tank",
+                "part_no": "LW11102",
+                "qpc": 1,
+                "assembly_code": "a1"
+            },
+            {
+                "name": "Member complete",
+                "part_no": "2 10113.0.03.100.010 D",
+                "qpc": 1,
+                "assembly_code": "a2"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "2 10113.0.03.100.012 A",
+                "qpc": 1,
+                "assembly_code": "a3"
+            },
+            {
+                "name": "Bracket complete",
+                "part_no": "2 10113.0.03.100.017 A",
+                "qpc": 1,
+                "assembly_code": "a4"
+            },
+            {
+                "name": "BRACKET COMPLETE",
+                "part_no": "2 10113.0.03.100.018",
+                "qpc": 1,
+                "assembly_code": "a5"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.022",
+                "qpc": 1,
+                "assembly_code": "a6"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.023",
+                "qpc": 1,
+                "assembly_code": "a7"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.024",
+                "qpc": 1,
+                "assembly_code": "a8"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11196",
+                "qpc": 1,
+                "assembly_code": "a9"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11197",
+                "qpc": 1,
+                "assembly_code": "a10"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11198",
+                "qpc": 1,
+                "assembly_code": "a11"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Provisions for 450L water Tank",
+                "part_no": "LW11102",
+                "qpc": 1,
+                "assembly_code": "A1"
+            },
+            {
+                "name": "Member complete",
+                "part_no": "2 10113.0.03.100.010 D",
+                "qpc": 1,
+                "assembly_code": "A2"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "2 10113.0.03.100.012 A",
+                "qpc": 1,
+                "assembly_code": "A3"
+            },
+            {
+                "name": "Bracket complete",
+                "part_no": "2 10113.0.03.100.017 A",
+                "qpc": 1,
+                "assembly_code": "A4"
+            },
+            {
+                "name": "BRACKET COMPLETE",
+                "part_no": "2 10113.0.03.100.018",
+                "qpc": 1,
+                "assembly_code": "A5"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.022",
+                "qpc": 1,
+                "assembly_code": "A6"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.023",
+                "qpc": 1,
+                "assembly_code": "A7"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.024",
+                "qpc": 1,
+                "assembly_code": "A8"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11196",
+                "qpc": 1,
+                "assembly_code": "A9"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11197",
+                "qpc": 1,
+                "assembly_code": "A10"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11198",
+                "qpc": 1,
+                "assembly_code": "A11"
+            }
+        ],
+        "machine": [
+            "UF0110"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 200,
+            "LWFCZAC (Executive Class AC Chair Car)": 145,
+            "LWACCN (AC-3Tier)": 160,
+            "HUMSAFAR (AC-3Tier)": 150,
+            "LWACCW (AC-2 Tier)": 185,
+            "LWSCN (Non-AC Sleeper)": 170,
+            "LS (GS/EOG 100 SEATER)": 155,
+            "LWSDD (Deendayalu)": 150,
+            "LWS (Antyodaya Coach)": 160,
+            "LWLRRM (450KVA Power Car)": 145,
+            "LWLRRM (750KVA Power Car)": 195,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 165,
+            "LSLRD with DA set (Luggage Cum brake van)": 180,
+            "LWCBAC (AC Buffet Car)": 175,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 160,
+            "TRC (AC Track recording Car)": 200,
+            "TRSC (AC track recording staff Car)": 155,
+            "LWFAC (AC 1st Class)": 195,
+            "LFCWAC Composite (FAC+AC2T)": 180,
+            "LVPH (LHB Parcel Van)": 150,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 185,
+            "LWS-AC (AC- General)": 175
+        }
+    },
+    "Stage II Framing, fitment & welding with BO front Part  of Underframe middle parts": {
+        "name": "Stage II Framing, fitment & welding with BO front Part  of Underframe middle parts",
+        "inputs": [
+            {
+                "name": "Provisions for 450L water Tank",
+                "part_no": "LW11102",
+                "qpc": 1,
+                "assembly_code": "A1"
+            },
+            {
+                "name": "Member complete",
+                "part_no": "2 10113.0.03.100.010 D",
+                "qpc": 1,
+                "assembly_code": "A2"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "2 10113.0.03.100.012 A",
+                "qpc": 1,
+                "assembly_code": "A3"
+            },
+            {
+                "name": "Bracket complete",
+                "part_no": "2 10113.0.03.100.017 A",
+                "qpc": 1,
+                "assembly_code": "A4"
+            },
+            {
+                "name": "BRACKET COMPLETE",
+                "part_no": "2 10113.0.03.100.018",
+                "qpc": 1,
+                "assembly_code": "A5"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.022",
+                "qpc": 1,
+                "assembly_code": "A6"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.023",
+                "qpc": 1,
+                "assembly_code": "A7"
+            },
+            {
+                "name": "CROSS MEMBER COMPLETE",
+                "part_no": "2 10113.1.03.100.024",
+                "qpc": 1,
+                "assembly_code": "A8"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11196",
+                "qpc": 1,
+                "assembly_code": "A9"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11197",
+                "qpc": 1,
+                "assembly_code": "A10"
+            },
+            {
+                "name": "Crossmember complete",
+                "part_no": "LE11198",
+                "qpc": 1,
+                "assembly_code": "A11"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "machine": [
+            "UF0210",
+            "UF0220"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 205,
+            "LWFCZAC (Executive Class AC Chair Car)": 245,
+            "LWACCN (AC-3Tier)": 200,
+            "HUMSAFAR (AC-3Tier)": 205,
+            "LWACCW (AC-2 Tier)": 235,
+            "LWSCN (Non-AC Sleeper)": 205,
+            "LS (GS/EOG 100 SEATER)": 205,
+            "LWSDD (Deendayalu)": 225,
+            "LWS (Antyodaya Coach)": 225,
+            "LWLRRM (450KVA Power Car)": 215,
+            "LWLRRM (750KVA Power Car)": 245,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 210,
+            "LSLRD with DA set (Luggage Cum brake van)": 235,
+            "LWCBAC (AC Buffet Car)": 200,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 205,
+            "TRC (AC Track recording Car)": 225,
+            "TRSC (AC track recording staff Car)": 200,
+            "LWFAC (AC 1st Class)": 245,
+            "LFCWAC Composite (FAC+AC2T)": 250,
+            "LVPH (LHB Parcel Van)": 210,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 200,
+            "LWS-AC (AC- General)": 245
+        }
+    },
+    "Stage III Robotic Welding upside of Underframe": {
+        "name": "Stage III Robotic Welding upside of Underframe",
+        "inputs": [
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "machine": [
+            "UF0310"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 265,
+            "LWFCZAC (Executive Class AC Chair Car)": 250,
+            "LWACCN (AC-3Tier)": 280,
+            "HUMSAFAR (AC-3Tier)": 300,
+            "LWACCW (AC-2 Tier)": 270,
+            "LWSCN (Non-AC Sleeper)": 255,
+            "LS (GS/EOG 100 SEATER)": 280,
+            "LWSDD (Deendayalu)": 295,
+            "LWS (Antyodaya Coach)": 295,
+            "LWLRRM (450KVA Power Car)": 300,
+            "LWLRRM (750KVA Power Car)": 300,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 285,
+            "LSLRD with DA set (Luggage Cum brake van)": 255,
+            "LWCBAC (AC Buffet Car)": 275,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 295,
+            "TRC (AC Track recording Car)": 300,
+            "TRSC (AC track recording staff Car)": 280,
+            "LWFAC (AC 1st Class)": 250,
+            "LFCWAC Composite (FAC+AC2T)": 265,
+            "LVPH (LHB Parcel Van)": 300,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 290,
+            "LWS-AC (AC- General)": 150
+        }
+    },
+    "Stage IV  Robotic Welding downside of Underframe": {
+        "name": "Stage IV  Robotic Welding downside of Underframe",
+        "inputs": [
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "machine": [
+            "UF0320"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 290,
+            "LWFCZAC (Executive Class AC Chair Car)": 305,
+            "LWACCN (AC-3Tier)": 245,
+            "HUMSAFAR (AC-3Tier)": 310,
+            "LWACCW (AC-2 Tier)": 295,
+            "LWSCN (Non-AC Sleeper)": 240,
+            "LS (GS/EOG 100 SEATER)": 265,
+            "LWSDD (Deendayalu)": 275,
+            "LWS (Antyodaya Coach)": 310,
+            "LWLRRM (450KVA Power Car)": 300,
+            "LWLRRM (750KVA Power Car)": 300,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 285,
+            "LSLRD with DA set (Luggage Cum brake van)": 245,
+            "LWCBAC (AC Buffet Car)": 265,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 265,
+            "TRC (AC Track recording Car)": 280,
+            "TRSC (AC track recording staff Car)": 300,
+            "LWFAC (AC 1st Class)": 300,
+            "LFCWAC Composite (FAC+AC2T)": 240,
+            "LVPH (LHB Parcel Van)": 295,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 280,
+            "LWS-AC (AC- General)": 300
+        }
+    },
+    "Stage V Repair & leftover work by manual welding Top Side": {
+        "name": "Stage V Repair & leftover work by manual welding Top Side",
+        "inputs": [
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "machine": [
+            "UF0320"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 345,
+            "LWFCZAC (Executive Class AC Chair Car)": 300,
+            "LWACCN (AC-3Tier)": 300,
+            "HUMSAFAR (AC-3Tier)": 310,
+            "LWACCW (AC-2 Tier)": 350,
+            "LWSCN (Non-AC Sleeper)": 320,
+            "LS (GS/EOG 100 SEATER)": 320,
+            "LWSDD (Deendayalu)": 345,
+            "LWS (Antyodaya Coach)": 360,
+            "LWLRRM (450KVA Power Car)": 305,
+            "LWLRRM (750KVA Power Car)": 315,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 305,
+            "LSLRD with DA set (Luggage Cum brake van)": 305,
+            "LWCBAC (AC Buffet Car)": 320,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 360,
+            "TRC (AC Track recording Car)": 345,
+            "TRSC (AC track recording staff Car)": 355,
+            "LWFAC (AC 1st Class)": 300,
+            "LFCWAC Composite (FAC+AC2T)": 305,
+            "LVPH (LHB Parcel Van)": 335,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 355,
+            "LWS-AC (AC- General)": 335
+        }
+    },
+    "Stage VI Corrugated Sheets Tack welded  to Underframe frame work": {
+        "name": "Stage VI Corrugated Sheets Tack welded  to Underframe frame work",
+        "inputs": [
+            {
+                "name": "Trough Sheets",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "b"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Trough Sheets",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "B"
+            }
+        ],
+        "machine": [
+            "UF0500"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 435,
+            "LWFCZAC (Executive Class AC Chair Car)": 435,
+            "LWACCN (AC-3Tier)": 410,
+            "HUMSAFAR (AC-3Tier)": 405,
+            "LWACCW (AC-2 Tier)": 405,
+            "LWSCN (Non-AC Sleeper)": 415,
+            "LS (GS/EOG 100 SEATER)": 460,
+            "LWSDD (Deendayalu)": 435,
+            "LWS (Antyodaya Coach)": 435,
+            "LWLRRM (450KVA Power Car)": 425,
+            "LWLRRM (750KVA Power Car)": 420,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 460,
+            "LSLRD with DA set (Luggage Cum brake van)": 425,
+            "LWCBAC (AC Buffet Car)": 420,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 420,
+            "TRC (AC Track recording Car)": 405,
+            "TRSC (AC track recording staff Car)": 410,
+            "LWFAC (AC 1st Class)": 410,
+            "LFCWAC Composite (FAC+AC2T)": 425,
+            "LVPH (LHB Parcel Van)": 455,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 455,
+            "LWS-AC (AC- General)": 460
+        }
+    },
+    "Stage VII Robotic Corrugated sheet stitch welding done": {
+        "name": "Stage VII Robotic Corrugated sheet stitch welding done",
+        "inputs": [
+            {
+                "name": "Trough Sheets",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "B"
+            },
+            {
+                "name": "Underframe frame work",
+                "part_no": "LE11269 c",
+                "qpc": 1,
+                "assembly_code": "A"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe frame work with corrugated sheet",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "UF0610"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 475,
+            "LWFCZAC (Executive Class AC Chair Car)": 475,
+            "LWACCN (AC-3Tier)": 420,
+            "HUMSAFAR (AC-3Tier)": 495,
+            "LWACCW (AC-2 Tier)": 480,
+            "LWSCN (Non-AC Sleeper)": 480,
+            "LS (GS/EOG 100 SEATER)": 500,
+            "LWSDD (Deendayalu)": 425,
+            "LWS (Antyodaya Coach)": 425,
+            "LWLRRM (450KVA Power Car)": 435,
+            "LWLRRM (750KVA Power Car)": 440,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 455,
+            "LSLRD with DA set (Luggage Cum brake van)": 455,
+            "LWCBAC (AC Buffet Car)": 455,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 460,
+            "TRC (AC Track recording Car)": 455,
+            "TRSC (AC track recording staff Car)": 475,
+            "LWFAC (AC 1st Class)": 475,
+            "LFCWAC Composite (FAC+AC2T)": 485,
+            "LVPH (LHB Parcel Van)": 420,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 420,
+            "LWS-AC (AC- General)": 500
+        }
+    },
+    "Stage VIII Robotic Corrugated sheet seam welding done": {
+        "name": "Stage VIII Robotic Corrugated sheet seam welding done",
+        "inputs": [
+            {
+                "name": "Underframe frame work with corrugated sheet",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe frame work with corrugated sheet",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "UF0620"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 280,
+            "LWFCZAC (Executive Class AC Chair Car)": 280,
+            "LWACCN (AC-3Tier)": 280,
+            "HUMSAFAR (AC-3Tier)": 230,
+            "LWACCW (AC-2 Tier)": 300,
+            "LWSCN (Non-AC Sleeper)": 260,
+            "LS (GS/EOG 100 SEATER)": 260,
+            "LWSDD (Deendayalu)": 275,
+            "LWS (Antyodaya Coach)": 295,
+            "LWLRRM (450KVA Power Car)": 245,
+            "LWLRRM (750KVA Power Car)": 245,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 230,
+            "LSLRD with DA set (Luggage Cum brake van)": 230,
+            "LWCBAC (AC Buffet Car)": 235,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 245,
+            "TRC (AC Track recording Car)": 300,
+            "TRSC (AC track recording staff Car)": 295,
+            "LWFAC (AC 1st Class)": 295,
+            "LFCWAC Composite (FAC+AC2T)": 265,
+            "LVPH (LHB Parcel Van)": 265,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 285,
+            "LWS-AC (AC- General)": 255
+        }
+    },
+    "Stage IX Attending of leftover work and rectification of weld defects": {
+        "name": "Stage IX Attending of leftover work and rectification of weld defects",
+        "inputs": [
+            {
+                "name": "Underframe frame work with corrugated sheet",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe frame work with corrugated sheet",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            }
+        ],
+        "machine": [
+            "UF0700"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 425,
+            "LWFCZAC (Executive Class AC Chair Car)": 410,
+            "LWACCN (AC-3Tier)": 410,
+            "HUMSAFAR (AC-3Tier)": 425,
+            "LWACCW (AC-2 Tier)": 415,
+            "LWSCN (Non-AC Sleeper)": 415,
+            "LS (GS/EOG 100 SEATER)": 425,
+            "LWSDD (Deendayalu)": 440,
+            "LWS (Antyodaya Coach)": 440,
+            "LWLRRM (450KVA Power Car)": 415,
+            "LWLRRM (750KVA Power Car)": 410,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 410,
+            "LSLRD with DA set (Luggage Cum brake van)": 425,
+            "LWCBAC (AC Buffet Car)": 435,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 435,
+            "TRC (AC Track recording Car)": 410,
+            "TRSC (AC track recording staff Car)": 440,
+            "LWFAC (AC 1st Class)": 425,
+            "LFCWAC Composite (FAC+AC2T)": 425,
+            "LVPH (LHB Parcel Van)": 415,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 415,
+            "LWS-AC (AC- General)": 410
+        }
+    },
+    "Stage X  Manual Welding of Backpieces at Bottom side of underframe": {
+        "name": "Stage X  Manual Welding of Backpieces at Bottom side of underframe",
+        "inputs": [
+            {
+                "name": "Underframe Welding Parts",
+                "part_no": "1 11012.0.03.095.001",
+                "qpc": 1,
+                "assembly_code": "d"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe Welding Parts",
+                "part_no": "1 11012.0.03.095.001",
+                "qpc": 1,
+                "assembly_code": "D"
+            }
+        ],
+        "machine": [
+            "UF0810"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 360,
+            "LWFCZAC (Executive Class AC Chair Car)": 360,
+            "LWACCN (AC-3Tier)": 425,
+            "HUMSAFAR (AC-3Tier)": 345,
+            "LWACCW (AC-2 Tier)": 395,
+            "LWSCN (Non-AC Sleeper)": 370,
+            "LS (GS/EOG 100 SEATER)": 410,
+            "LWSDD (Deendayalu)": 430,
+            "LWS (Antyodaya Coach)": 415,
+            "LWLRRM (450KVA Power Car)": 425,
+            "LWLRRM (750KVA Power Car)": 430,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 405,
+            "LSLRD with DA set (Luggage Cum brake van)": 405,
+            "LWCBAC (AC Buffet Car)": 365,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 380,
+            "TRC (AC Track recording Car)": 395,
+            "TRSC (AC track recording staff Car)": 410,
+            "LWFAC (AC 1st Class)": 410,
+            "LFCWAC Composite (FAC+AC2T)": 435,
+            "LVPH (LHB Parcel Van)": 435,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 405,
+            "LWS-AC (AC- General)": 395
+        }
+    },
+    "Stage XI Supporting members are welded at Topside of underframe": {
+        "name": "Stage XI Supporting members are welded at Topside of underframe",
+        "inputs": [
+            {
+                "name": "Supporting Members",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "e"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Supporting Members",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "E"
+            }
+        ],
+        "machine": [
+            "UF0810"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 380,
+            "LWFCZAC (Executive Class AC Chair Car)": 395,
+            "LWACCN (AC-3Tier)": 410,
+            "HUMSAFAR (AC-3Tier)": 410,
+            "LWACCW (AC-2 Tier)": 435,
+            "LWSCN (Non-AC Sleeper)": 435,
+            "LS (GS/EOG 100 SEATER)": 405,
+            "LWSDD (Deendayalu)": 395,
+            "LWS (Antyodaya Coach)": 360,
+            "LWLRRM (450KVA Power Car)": 360,
+            "LWLRRM (750KVA Power Car)": 425,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 345,
+            "LSLRD with DA set (Luggage Cum brake van)": 395,
+            "LWCBAC (AC Buffet Car)": 370,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 410,
+            "TRC (AC Track recording Car)": 430,
+            "TRSC (AC track recording staff Car)": 360,
+            "LWFAC (AC 1st Class)": 360,
+            "LFCWAC Composite (FAC+AC2T)": 425,
+            "LVPH (LHB Parcel Van)": 345,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 395,
+            "LWS-AC (AC- General)": 370
+        }
+    },
+    "Stage XII  Final Inspection and attending of leftover work": {
+        "name": "Stage XII  Final Inspection and attending of leftover work",
+        "inputs": [
+            {
+                "name": "Underframe frame work with corrugated sheet",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "C"
+            },
+            {
+                "name": "Underframe Welding Parts",
+                "part_no": "1 11012.0.03.095.001",
+                "qpc": 1,
+                "assembly_code": "D"
+            },
+            {
+                "name": "Supporting Members",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "E"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Underframe Complete",
+                "part_no": "LE11105 alt h",
+                "qpc": 1,
+                "assembly_code": "F"
+            }
+        ],
+        "machine": [
+            "UF0900"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 150,
+            "LWFCZAC (Executive Class AC Chair Car)": 125,
+            "LWACCN (AC-3Tier)": 125,
+            "HUMSAFAR (AC-3Tier)": 145,
+            "LWACCW (AC-2 Tier)": 140,
+            "LWSCN (Non-AC Sleeper)": 120,
+            "LS (GS/EOG 100 SEATER)": 120,
+            "LWSDD (Deendayalu)": 135,
+            "LWS (Antyodaya Coach)": 125,
+            "LWLRRM (450KVA Power Car)": 150,
+            "LWLRRM (750KVA Power Car)": 150,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 145,
+            "LSLRD with DA set (Luggage Cum brake van)": 120,
+            "LWCBAC (AC Buffet Car)": 135,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 135,
+            "TRC (AC Track recording Car)": 145,
+            "TRSC (AC track recording staff Car)": 145,
+            "LWFAC (AC 1st Class)": 120,
+            "LFCWAC Composite (FAC+AC2T)": 135,
+            "LVPH (LHB Parcel Van)": 150,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 125,
+            "LWS-AC (AC- General)": 125
+        }
+    },
+    "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )": {
+        "name": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )",
+        "inputs": [
+            {
+                "name": "Side wall Left complete",
+                "part_no": "LE14101 e",
+                "qpc": 1,
+                "assembly_code": "4"
+            },
+            {
+                "name": "End wall Complete",
+                "part_no": "1.10113.0.20.120.001",
+                "qpc": 1,
+                "assembly_code": "5"
+            },
+            {
+                "name": "Roof Complete",
+                "part_no": "LE16100 f",
+                "qpc": 1,
+                "assembly_code": "6"
+            },
+            {
+                "name": "Underframe Complete",
+                "part_no": "LE11105 alt h",
+                "qpc": 1,
+                "assembly_code": "F"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Shell Assembly",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "1"
+            }
+        ],
+        "machine": [
+            "SH0110"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 455,
+            "LWFCZAC (Executive Class AC Chair Car)": 455,
+            "LWACCN (AC-3Tier)": 460,
+            "HUMSAFAR (AC-3Tier)": 530,
+            "LWACCW (AC-2 Tier)": 530,
+            "LWSCN (Non-AC Sleeper)": 485,
+            "LS (GS/EOG 100 SEATER)": 485,
+            "LWSDD (Deendayalu)": 485,
+            "LWS (Antyodaya Coach)": 475,
+            "LWLRRM (450KVA Power Car)": 475,
+            "LWLRRM (750KVA Power Car)": 475,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 515,
+            "LSLRD with DA set (Luggage Cum brake van)": 520,
+            "LWCBAC (AC Buffet Car)": 505,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 500,
+            "TRC (AC Track recording Car)": 495,
+            "TRSC (AC track recording staff Car)": 495,
+            "LWFAC (AC 1st Class)": 450,
+            "LFCWAC Composite (FAC+AC2T)": 450,
+            "LVPH (LHB Parcel Van)": 465,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 455,
+            "LWS-AC (AC- General)": 510
+        }
+    },
+    "Stage-II Final Repair & Leakage testing": {
+        "name": "Stage-II Final Repair & Leakage testing",
+        "inputs": [
+            {
+                "name": "Shell Assembly",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "1"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "Coach",
+                "part_no": 0,
+                "qpc": 1,
+                "assembly_code": "1"
+            }
+        ],
+        "machine": [
+            "SH0120"
+        ],
+        "time": {
+            "LWSCZAC (2nd Class AC Chair Car)": 145,
+            "LWFCZAC (Executive Class AC Chair Car)": 145,
+            "LWACCN (AC-3Tier)": 145,
+            "HUMSAFAR (AC-3Tier)": 150,
+            "LWACCW (AC-2 Tier)": 115,
+            "LWSCN (Non-AC Sleeper)": 110,
+            "LS (GS/EOG 100 SEATER)": 110,
+            "LWSDD (Deendayalu)": 125,
+            "LWS (Antyodaya Coach)": 145,
+            "LWLRRM (450KVA Power Car)": 150,
+            "LWLRRM (750KVA Power Car)": 150,
+            "LDSLR (Under Slung Luggage Cum brake Van)": 135,
+            "LSLRD with DA set (Luggage Cum brake van)": 135,
+            "LWCBAC (AC Buffet Car)": 110,
+            "LWSCZ (2nd Class Non-AC Chair Car)": 115,
+            "TRC (AC Track recording Car)": 120,
+            "TRSC (AC track recording staff Car)": 110,
+            "LWFAC (AC 1st Class)": 110,
+            "LFCWAC Composite (FAC+AC2T)": 145,
+            "LVPH (LHB Parcel Van)": 150,
+            "LWACCNE (Gareeb Rath AC Sleeper Coach)": 120,
+            "LWS-AC (AC- General)": 125
+        }
+    }
+}

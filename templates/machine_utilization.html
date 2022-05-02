@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Machine_loading{% endblock title %}
+{% block body %}
+<div class="pt-4">
+    {% autoescape off %}
+        {% include 'machine_utilization_fig.html' %}
+    {% endautoescape %}
+</div>
+    
+{% endblock body %}

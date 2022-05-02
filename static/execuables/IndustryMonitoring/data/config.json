@@ -1,0 +1,583 @@
+{
+    "MTLINKi": {
+        "host": "localhost",
+        "port": 3000,
+        "username": "APIConsumer",
+        "password": "Iforgotit1234",
+        "equipmentList": [
+            {
+                "equipmentName": "MCF-SS-SWR-SPOT-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SWR-SPOT-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-SWL-SPOT-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SWL-SPOT-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-SWR-RFBW-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SWR-SPOT-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-SWL-RFBW-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SWR-SPOT-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-SWR-MIG-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SWR-MIG-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-SWL-MIG-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SWL-MIG-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-EWR-MIG-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-EWR-MIG-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-EWL-MIG-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-EWR-MIG-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-RF-MIG-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-RF-MIG-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-UF-SKMIG-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-UF-SKMIG-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-UF-SKMIG-R2",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-UF-SKMIG-R2",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-UF-CSMIG-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-UF-CSMIG-R1",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-UF-CSMIG-R2",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-UF-CSMIG-R2",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-UF-MCMC-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-UF-CSMIG-R2",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-UF-HSKW-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-UF-CSMIG-R2",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-UF-USTW-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-UF-CSMIG-R2",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-SA-SFJ-R1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SA-SFJ-R2",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-SA-SFJ-R2",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "condition",
+                        "tagType": "signal",
+                        "tagDataType": "string"
+                    },
+                    {
+                        "tagName": "Disconnect_MCF-SS-SA-SFJ-R2",
+                        "tagType": "signal",
+                        "tagDataType": "boolean"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-BS-BFMC-C1",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "PartsNum_path1_MCF-BS-BFMC-C1",
+                        "tagType": "signal",
+                        "tagDataType": "integer"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-BS-BFMC-C2",
+                "tagList":[
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    },
+                    {
+                        "tagName": "PartsNum_path1_MCF-BS-BFMC-C2",
+                        "tagType": "signal",
+                        "tagDataType": "integer"
+                    }
+                ]
+            }
+        ]
+    },
+    "NIOPC": {
+        "baseURL": "opc.tcp://localhost",
+        "port" : 49350,
+        "equipmentList": [
+            {
+                "equipmentName": "MCF-SMS-LCMA3-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SMS-LCMA3-C2",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SMS-LCWMA3-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SMS-LCWMA3-C2",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-SS-RF-SPOT-R1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-BS-BMM-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-BS-EMM-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-BS-BMC-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-BS-BMC-C2",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-WS-EDCSTRM-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-WS-ATM-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-WS-CGM-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-WS-VTLM-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-WS-SWLM-C1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-WS-WHCS-A1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            },
+            {
+                "equipmentName": "MCF-WS-AHCS-A1",
+                "tagList": [
+                    {
+                        "tagName": "operationalStatus",
+                        "tagType": "custom",
+                        "tagDataType": "operationalStatus"
+                    }
+                ]
+            }
+        ]
+    },
+    "RabbitMQ": {
+        "host": "tmir.tendril.link",
+        "port": 5672,
+        "virtualHost": "tmri4",
+        "username": "tmri4",
+        "password": "tmri4",
+        "exchangeName": "i4.topic"  
+    },
+    "RFID":{
+        "port": 7389
+    },
+    "MWDAQ":{
+        "port":5234
+    }
+}

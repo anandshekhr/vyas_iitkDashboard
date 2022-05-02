@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <layout class="QFormLayout" name="formLayout">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="machineNameLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Machine Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="machineNameCombo">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>360</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>SW0110</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SW0120</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SW0130</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SW0140</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SW0150</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SW0160</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EW0110</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EW0120</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EW0130</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RF0110</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RF0120</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RF0130</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RF0140</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0110</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0210</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0220</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0310</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0320</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0400</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0500</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0610</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0620</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0700</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0810</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0820</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>UF0900</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0110</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0120</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0130</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0140</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0150</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0160</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0170</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0180</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0190</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SH0200</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="variantlabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Variant</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="variantcomboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>360</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>LWSCZAC (2nd Class AC Chair Car)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWFCZAC (Executive Class AC Chair Car</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWACCN (AC-3Tier)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>HUMSAFAR (AC-3Tier)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWACCW (AC-2 Tier)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWSCN (Non-AC Sleeper)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LS (GS/EOG 100 SEATER)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWSDD (Deendayalu)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWS (Antyodaya Coach)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWLRRM (450KVA Power Car)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWLRRM (750KVA Power Car)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LDSLR (Under Slung Luggage Cum brake Van)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LSLRD with DA set (Luggage Cum brake van)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWCBAC (AC Buffet Car)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWSCZ (2nd Class Non-AC Chair Car)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>TRC (AC Track recording Car)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>TRSC (AC track recording staff Car)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWFAC (AC 1st Class)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LFCWAC Composite (FAC+AC2T)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LVPH (LHB Parcel Van)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWACCNE (Gareeb Rath AC Sleeper Coach)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>LWS-AC (AC- General)</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="partNameLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Part Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="partNameLineEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>360</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="partNumberLabel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Part Number</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="partNumberLineEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>360</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="partInfoLabel">
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: qlineargradient(spread:pad, x1:0, y1:0.159, x2:0, y2:0.914773, stop:0 rgba(255, 255, 255, 255), stop:0.0681818 rgba(255, 255, 255, 255), stop:0.954545 rgba(95, 154, 200, 255));</string>
+      </property>
+      <property name="text">
+       <string>Part Information</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

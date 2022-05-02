@@ -1,0 +1,261 @@
+[
+    {
+        "name": "SW0110",
+        "line": "SWL",
+        "machine_no": 1,
+        "status": "READY",
+        "operation": "Stage-I SW Skeleton Tack Welding"
+    },
+    {
+        "name": "SW0120",
+        "line": "SWL",
+        "machine_no": 2,
+        "status": "READY",
+        "operation": "Stage-II Robotic Spot Welding"
+    },
+    {
+        "name": "SW0130",
+        "line": "SWL",
+        "machine_no": 3,
+        "status": "READY",
+        "operation": "Stage-III SW skeletion Robotic Mig Welding"
+    },
+    {
+        "name": "SW0140",
+        "line": "SWL",
+        "machine_no": 4,
+        "status": "READY",
+        "operation": "Stage-IV Roof Bearer Robotic Arc Spot welding"
+    },
+    {
+        "name": "SW0150",
+        "line": "SWL",
+        "machine_no": 5,
+        "status": "READY",
+        "operation": "Stage-V SW & Roof Bearer Robotic welding"
+    },
+    {
+        "name": "SW0160",
+        "line": "SWL",
+        "machine_no": 6,
+        "status": "READY",
+        "operation": "Stage-VI Backpiece Leftover welding"
+    },
+    {
+        "name": "EW0110",
+        "line": "EWL",
+        "machine_no": 1,
+        "status": "READY",
+        "operation": "Stage I Fabrication of Sub assemblies at Tacking Jigs & Fixtures , Framework tacking of Endwall Complete"
+    },
+    {
+        "name": "EW0120",
+        "line": "EWL",
+        "machine_no": 2,
+        "status": "READY",
+        "operation": "Stage II Robotic Endwall Welding Station"
+    },
+    {
+        "name": "EW0130",
+        "line": "EWL",
+        "machine_no": 3,
+        "status": "READY",
+        "operation": "Stage III Manual Repair stand"
+    },
+    {
+        "name": "RF0110",
+        "line": "RF",
+        "machine_no": 1,
+        "status": "READY",
+        "operation": "Stage I Machine- B&C machine"
+    },
+    {
+        "name": "RF0120",
+        "line": "RF",
+        "machine_no": 2,
+        "status": "READY",
+        "operation": "Stage II Manual JIG 9.2"
+    },
+    {
+        "name": "RF0130",
+        "line": "RF",
+        "machine_no": 3,
+        "status": "READY",
+        "operation": "Stage III Roof Robotic Welding Station"
+    },
+    {
+        "name": "RF0140",
+        "line": "RF",
+        "machine_no": 4,
+        "status": "READY",
+        "operation": "Stage IV Roof Acceptance Stand and left over Welding station(13.0)"
+    },
+    {
+        "name": "RF0150",
+        "line": "RF",
+        "machine_no": 5,
+        "status": "READY",
+        "operation": "Stage V Roof Acceptance Stand and left over Welding station(11.0)"
+    },
+    {
+        "name": "UF0110",
+        "line": "UF",
+        "machine_no": 1,
+        "status": "READY",
+        "operation": "Stage I Fab:Bat Box SubAssy, Pump Mt Brkt, Elec RBC channel & other cross member SubAssys"
+    },
+    {
+        "name": "UF0210",
+        "line": "UF",
+        "machine_no": 2,
+        "status": "READY",
+        "operation": "Stage II Framing, fitment & welding with BO front Part  of Underframe middle parts"
+    },
+    {
+        "name": "UF0220",
+        "line": "UF",
+        "machine_no": 3,
+        "status": "READY",
+        "operation": "Stage II Framing, fitment & welding with BO front Part  of Underframe middle parts"
+    },
+    {
+        "name": "UF0310",
+        "line": "UF",
+        "machine_no": 4,
+        "status": "READY",
+        "operation": "Stage III Robotic Welding upside of Underframe"
+    },
+    {
+        "name": "UF0320",
+        "line": "UF",
+        "machine_no": 5,
+        "status": "READY",
+        "operation": "Stage IV  Robotic Welding downside of Underframe"
+    },
+    {
+        "name": "UF0400",
+        "line": "UF",
+        "machine_no": 6,
+        "status": "READY",
+        "operation": "Stage V Repair & leftover work by manual welding Top Side"
+    },
+    {
+        "name": "UF0500",
+        "line": "UF",
+        "machine_no": 7,
+        "status": "READY",
+        "operation": "Stage VI Corrugated Sheets Tack welded  to Underframe frame work"
+    },
+    {
+        "name": "UF0610",
+        "line": "UF",
+        "machine_no": 8,
+        "status": "READY",
+        "operation": "Stage VII Robotic Corrugated sheet stitch welding done"
+    },
+    {
+        "name": "UF0620",
+        "line": "UF",
+        "machine_no": 9,
+        "status": "READY",
+        "operation": "Stage VIII Robotic Corrugated sheet seam welding done"
+    },
+    {
+        "name": "UF0700",
+        "line": "UF",
+        "machine_no": 10,
+        "status": "READY",
+        "operation": "Stage IX Attending of leftover work and rectification of weld defects"
+    },
+    {
+        "name": "UF0810",
+        "line": "UF",
+        "machine_no": 11,
+        "status": "READY",
+        "operation": "Stage X  Manual Welding of Backpieces at Bottom side of underframe"
+    },
+    {
+        "name": "UF0820",
+        "line": "UF",
+        "machine_no": 12,
+        "status": "READY",
+        "operation": "Stage XI Supporting members are welded at Topside of underframe"
+    },
+    {
+        "name": "UF0900",
+        "line": "UF",
+        "machine_no": 13,
+        "status": "READY",
+        "operation": "Stage XII  Final Inspection and attending of leftover work"
+    },
+    {
+        "name": "SH0110",
+        "line": "SH",
+        "machine_no": 1,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0120",
+        "line": "SH",
+        "machine_no": 2,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0130",
+        "line": "SH",
+        "machine_no": 3,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0140",
+        "line": "SH",
+        "machine_no": 4,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0150",
+        "line": "SH",
+        "machine_no": 5,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0160",
+        "line": "SH",
+        "machine_no": 6,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0170",
+        "line": "SH",
+        "machine_no": 7,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0180",
+        "line": "SH",
+        "machine_no": 8,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0190",
+        "line": "SH",
+        "machine_no": 9,
+        "status": "READY",
+        "operation": "Stage-I Robotic Shell AssemblyLine at 22.2.1 (JIG I & II )"
+    },
+    {
+        "name": "SH0200",
+        "line": "SH",
+        "machine_no": 10,
+        "status": "READY",
+        "operation": "Stage-II Final Repair & Leakage testing"
+    }
+]

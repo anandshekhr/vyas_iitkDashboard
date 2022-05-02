@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}HMI{% endblock title %}
+{% block body %}
+{% comment %} <form class="row g-3 mt-5"  method="post" action="/daqmtlinki" >{{csrf_input}}
+    <div class="pl-8">
+        <label for="fname" >DAQ Engine MT-LINKi</label>
+        <div class="">
+            <button type="submit" class="btn btn-primary float-left mt-5 mr-2" >Initialization</button>
+        </div>
+    </div> 
+</form> {% endcomment %}
+
+<form class ="row g-3 mt-5 pl-5" action="/daqmtlinki">
+    <div class="form-group row mt-5">
+      <label for="fname" class="col-sm-2 col-form-label">DAQ Engine MT-LINKi</label>
+      <div class="col-sm-10">
+        <button type="submit" readonly class="btn btn-primary" >Initialization</button>
+      </div>
+    </div>
+</form>
+
+<form class ="pl-5" action="/daqniopc">
+    <div class="form-group row">
+      <label for="fname" class="col-sm-2 col-form-label">DAQ Engine NIOPC</label>
+      <div class="col-sm-10">
+        <button type="submit" readonly class="btn btn-primary" >Initialization</button>
+      </div>
+    </div>
+</form>
+{% endblock body %}

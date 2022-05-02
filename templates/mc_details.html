@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %}Machine Details{% endblock title %}
+{% block body %}
+
+<div class="container mt-5">
+   
+    <p>
+    <button class="btn btn-primary float-right mt-5 mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Add
+    </button></p><br><br>
+    <div class="collapse" id="collapseExample">
+        <form class="row g-3 pt-2"  method="post" action="/place_order">
+            {% csrf_token %}
+            <div class="col-md-6">
+                <label for="machine_name" class="form-label ">Machine Name</label>
+                <input type="text" class="form-control" id="machine_name" name="machine_name" placeholder="Name of Machine">
+            </div>
+            <div class="col-md-6">
+                <label for="Manufacturer" class="form-label">Manufacturer</label>
+                <input type="text" class="form-control" id="Manufacturer" name="Manufacturer" placeholder="Name of manufacturer">
+            </div>
+            
+            <div class ="col-md-6" >
+                <label for="shopName" class="form-label">Shop Name</label>
+                <select id="shopName" class="form-select" name="shopName">
+                    <option selected>Select Variant</option>
+                    <option value="Shell Shop">Shell Shop</option>
+                    <option value="Sheet Metal Shop">Sheet Metal Shop</option>
+                    <option value="Bogie Shop">Bogie Shop</option>
+                    <option value="Wheel Shop">Wheel Shop</option>
+                    <option value="Paint Shop">Paint Shop</option>
+                </select> 
+            </div>
+            <div class ="col-md-6" >
+                <label for="MachineNo" class="form-label">Machine No</label>
+                <input type="number" class="form-control" id="MachineNo" name="MachineNo" placeholder="Machine No">
+            </div>
+            <div class="col-md-6">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" class="form-control" id="description" name="description" placeholder="Description">
+            </div>
+            <div class="col-md-6">
+                <label for="remarks" class="form-label">Priority</label>
+                <input type="text" class="form-control" id="remarks" name="remarks" placeholder="Remarks">
+            </div>
+            
+            <div class="grid grid-cols-1 gap-4 place-items-center">
+                <button type="submit" class="btn btn-primary px-4 ">Submit</button>
+            </div>
+        </form>
+    </div>
+<br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">S No.</th>
+                <th scope="col">Machine Name</th>
+                <th scope="col">Line</th>
+                <th scope="col">Machine No.</th>
+                <th scope="col">Operation</th>
+                <th scope="col">RT Status</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+         <tbody>
+            {% if machDetail|length > 0 %}    
+                {% for mach in machDetail %}
+                    <tr>
+                        <th scope="row">{{forloop.counter}}</th>
+                        <td>{{mach.machine_name}}</td>
+                        <td>{{mach.line}}</td>
+                        <td>{{mach.MachineNo}}</td>
+                        <td>{{mach.operation}}</td>
+                        <td>{{mach.status}}</td>
+                        <td>
+                            <!-- <a href="/update/{{forloop.counter}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Update</button> -->
+                            <a href="/deleteMachine/{{mach.id}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody> 
+    </table>
+</div>
+{% endblock body %}
