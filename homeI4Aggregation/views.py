@@ -5,9 +5,10 @@ from django.shortcuts import render,HttpResponse,redirect
 from datetime import date, datetime
 
 from pyparsing import line
-from homeI4Aggregation.models import machineDetails, makelist, productionOrder,componentDetails,HMIDetail,inhouseInventory,operationsDetails
+from homeI4Aggregation.models import InventoryIN, machineDetails, makelist, productionOrder,componentDetails,HMIDetail,inhouseInventory,operationsDetails
 from django.contrib import messages
 from src._inputs._lib import main
+from src._inputs._lib.main_inputs import forPreInventory
 from django.views.decorators.csrf import csrf_protect
 import os,subprocess
 import sys
@@ -243,19 +244,20 @@ def inventory(request):
         productSno=request.POST.get('productSno')
         level=request.POST.get('level')
         qpp=request.POST.get('qpp')
-        dimension=request.POST.get('dimension')
         drawingno=request.POST.get('drawingno')
         availableNos=request.POST.get('availableNos')
-        description=request.POST.get('description')
         timein=request.POST.get('timein')
-        inhouseInv=inhouseInventory(productSno=productSno,level=level,qpp=qpp,dimension=dimension,drawingno=drawingno,availableNos=availableNos,description=description,timein=timein,date=datetime.today())
+        inhouseInv=InventoryIN(productSno=productSno,level=level,qpp=qpp,drawingno=drawingno,availableNos=availableNos,timein=timein,date=datetime.today())
         inhouseInv.save()
-        doc ={"ProductSNo":productSno,"Level":level,"DrawingNo":drawingno,"Description":description,"qpc":qpp,"length":dimension,"width":dimension,"thick":dimension,"InnerDia":dimension,"OuterDia":dimension,"quantityAvailable":availableNos}
+        doc ={"ProductSNo":productSno,"Level":level,"DrawingNo":drawingno,"Description":drawingno,"qpc":qpp,"length":drawingno,"width":drawingno,"thick":drawingno,"InnerDia":drawingno,"OuterDia":drawingno,"quantityAvailable":availableNos}
         # mycol.insert_one(doc)
         jsonConvert = json.dumps(doc)
         createToAPI = requests.post(apiInvURL,data=jsonConvert)
         messages.success(request, 'your message has been sent!')
-    inhouseInvs=inhouseInventory.objects.all()
+    inhouseInvs=InventoryIN.objects.all()
+    print(inhouseInvs)
+    addToMainInventory(request)
+    getInventoryDetails(request)
     return render(request,"inHouseInventory.html",{'inhouseInvs':inhouseInvs})
 
 def hmi(request):
@@ -323,6 +325,12 @@ def readMachineJsonSaveToDB(request):
         machineDBData = machineDetails(machine_name = MachineName,line = line,status=status,MachineNo =machineno,Description=operationName,operation = operationName,currentDate=datetime.today())
         machineDBData.save()
         
-        
+def addToMainInventory(request):
+    inhouseInvs=inhouseInventory.objects.all()
+    for inv in inhouseInvs:
+        comp = main.Component(inv.productSno,"Variant1",1,"SWL",inv.drawingno,"machin","READY",1,"Ac","02-05-2022")
+        forPreInventory.append(comp)
 
-
+def getInventoryDetails(request):
+    inv = inhouseInventory.objects.all()
+    print(inv)

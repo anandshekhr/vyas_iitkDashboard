@@ -17,7 +17,7 @@
             <th scope="col">QPP</th>
             <th scope="col">Length</th>
             <th scope="col">Available Nos.</th>
-            <!-- <th scope="col">Actions</th> -->
+            <th scope="col">Actions</th>
 
         </tr>
     </thead>
@@ -33,10 +33,10 @@
                     <td>{{Data.qpc}}</td>
                     <td>{{Data.length}}</td>
                     <td>{{Data.quantityAvailable}}</td>
-                    <!-- <td>
-                        <a href="/invUpdate/{{forloop.counter}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Update</button>
+                    <td>
+                        <a href="/invUpdate/{{forloop.counter}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Add to Inv</button>
                         <a href="/delete/{{Data.sno}}" type="button" class="btn btn-outline-dark btn-sm mx-1">Delete</button>
-                    </td> -->
+                    </td>
                 </tr>
             {% endfor %}
         {% endif %}
