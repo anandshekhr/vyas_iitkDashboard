@@ -18,6 +18,8 @@ from src._inputs._lib.main import Schedule
 import pandas as pd
 #id pass: industry4.0 , iforgotit1234
 
+somelist =  []
+a = 0
 # Create your views here.
 @csrf_protect
 def index (request):
@@ -304,6 +306,9 @@ def readAllDB(request):
 
 def operationDetails(request):
     # readAllDB(request)
+    # subprocess.Popen(os.getcwd() + "\\src\\_inputs\\data\\inventory_data.xlsx ")
+    # os.startfile("C:\Users\Shekhar's\source\repos\iitk\vyas_iitkDashboard\src\_inputs\data\inventory_data.xlsx")
+    # os.startfile("C:\Users\Shekhar's\source\repos\iitk\vyas_iitkDashboard\src\_inputs\data\inventory_data.xlsx",'print')
     operDetail = operationsDetails.objects.all()
     return render(request,"operation_details.html",{'operDetail':operDetail})
 
@@ -334,3 +339,44 @@ def addToMainInventory(request):
 def getInventoryDetails(request):
     inv = inhouseInventory.objects.all()
     print(inv)
+
+def readInventoryData(request):
+    input_folder = os.path.join(os.getcwd(),"src/_inputs/data")
+    swl_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'swl_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    ewl_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'ewl_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    rf_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'rf_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    uf_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'uf_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    sh_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'sh_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    operation_list = [swl_op,ewl_op,rf_op,uf_op,sh_op]
+    components = {}
+    i = 0
+
+    for items in operation_list:
+        for index,row in items.iterrows():
+            i = i + 1
+            # if row not in components:
+            components = {"sno":i,"operation":row[0],"component_name":row[1],"drawing_no":row[2],"qpc":row[3],"types":row[4],"ac":row[5],"inventory":row[6]}
+            somelist.append(components)
+    return render(request,"componentsDetails.html",{"components":somelist})
+
+def updateComponentsDetails(request,listindex):
+    getDataFromComponentsUpdate = somelist[listindex - 1]
+    # print(getDataFromComponentsUpdate.component_name)
+    return render(request,"updateComponentsDetails.html",{"updateComponent":getDataFromComponentsUpdate})
+
+def updateToNewFile(request,sno):
+    new_component_name = request.POST.get('component_name')
+    new_drawing_no = request.POST.get('drawing_no')
+    new_qpc = request.POST.get('qpc')
+    new_inventory = request.POST.get('inventory')
+    assembly_code = request.POST.get('assembly_code')
+    types = request.POST.get('type')
+    new_component = {"component_name":new_component_name,"drawing_no":new_drawing_no,"qpc":new_qpc,"types":types,"ac":assembly_code,"inventory":new_inventory}
+    somelist[sno - 1].update(new_component)
+    writeToExcelComponentDetails(request)
+    return render(request,"componentsDetails.html",{"components":somelist})
+
+def writeToExcelComponentDetails(request):
+    column = ('sno','Operation','Item Description','Drg.No.', 'QPC', 'I or O','Assembly Code','Inventory')
+    df = pd.DataFrame(data=somelist)
+    df.to_excel('./src\\_outputs\\Inventory_newData.xlsx',sheet_name="Inventory",header=column,index=None)

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Place_Order{% endblock title %}
+{% block body %}
+<div class="container my-3 mt-5">
+    <div class="container"><br>
+        <h1 class="text-3xl text-center leading-8 font-bold tracking-tight text-green-700 ">Update Component Details</h1>
+    </div><br>
+    <form class="row g-3"  method="post" action="/updateNewComponent/{{updateComponent.sno}}">
+        {% csrf_token %}
+        <div class="col-md-6">
+            <label for="component_name" class="form-label">Component Name</label>
+            <input type="text" class="form-control" id="component_name" required maxlength="200" name="component_name" value="{{updateComponent.component_name}}">
+        </div>
+        <div class="col-md-6">
+            <label for="drawing_no" class="form-label">Drawing No</label>
+            <input type="text" placeholder="Drawing Number" class="form-control" id="drawing_no" name="drawing_no"  value="{{updateComponent.drawing_no}}">
+        </div>
+    
+        <div class="col-md-6">
+            <label for="qpc" class="form-label">Quantity Per Coach</label>
+            <input type="number" class="form-control" id="qpc" name="qpc" value="{{updateComponent.qpc}}">
+        </div>
+        <div class="col-md-6">
+            <label for="inventory" class="form-label">Inventory</label>
+            <input type="number" class="form-control" id="inventory" name="inventory" value="{{updateComponent.inventory}}">
+        </div>
+        <div class="col-md-6">
+            <label for="assembly_code" class="form-label">Assembly Code</label>
+            <input type="text" class="form-control" id="assembly_code" name="assembly_code" value="{{updateComponent.ac}}" readonly>
+        </div>
+        <div class="col-md-6">
+            <label for="type" class="form-label">Input or Output</label>
+            <input type="text" class="form-control" id="type" name="type" value="{{updateComponent.types}}" readonly>
+        </div>
+        <div class="col-4">
+            <button type="submit" class="btn btn-primary" value="submit">Submit</button>
+        </div>
+    </form>
+    
+</div>    
+{% endblock body %}
+    

@@ -17,7 +17,7 @@ urlpatterns = [
     path('machine_details',views.mcDetails,name='mc_details'),
     path('machine_details_input',views.mcDetailsInput,name='mc_details_input'),
     path('comp_details',views.compDetails,name='comp_details'),
-    path('operation_details',views.operationDetails,name='oper_details'),
+    # path('operation_details',views.operationDetails,name='oper_details'),
     path('contact',views.contact,name='contact'),
     path('daq',views.daq,name="daq"),
     path('daqpanelbharat',views.daqpanelbharat,name="daqpanelbharat"),
@@ -40,5 +40,7 @@ urlpatterns = [
     path('machineHealth',views.machineHealth,name='machineHealth'),
     path('deepLearn',views.machineHealth,name='deepLearn'),
     path('buy',views.buy,name='buy'),
-    path('operation_details',views.operationDetails,name='oper_details'),
+    path('operation_details',views.readInventoryData,name='oper_details'),
+    path('updateComponentsDetails/<int:listindex>',views.updateComponentsDetails,name='updateComponents'),
+    path('updateNewComponent/<int:sno>',views.updateToNewFile,name='updateNewComponent'),
 ]
