@@ -1,5 +1,6 @@
 import operator
 import re
+import shutil
 from tracemalloc import start
 from django.shortcuts import render,HttpResponse,redirect
 from datetime import date, datetime
@@ -42,6 +43,7 @@ def placeOrder (request):
         order=productionOrder(orderRefNo=OR_no,orderVariant=variant,orderStartDate=start_date,orderEndDate=end_date,orderQuantity=quantity,orderPriority=priority,currentDate=datetime.today())
         order.save()
         messages.success(request, 'your Order has been sent!')
+        generateNewVariantOperationData(request,variant=variant)
     orders = productionOrder.objects.all()
     return render(request, "place_order.html",{'orders':orders})
 
@@ -74,8 +76,6 @@ def update(request,sno):
     order = productionOrder.objects.get(sno=sno)
     return render(request, "update.html",{'order':order})
 
-
-
 def delete(request,sno):
     order = productionOrder.objects.get(sno=sno)
     order.delete()
@@ -106,13 +106,6 @@ def mcDetailsInput(request):
         messages.success(request, 'your message has been sent!')
     machDetail = machineDetails.objects.all()
     return render(request,"mc_details.html",{"machDetail":machDetail})
-
-
-def compDetails(request):
-    return render(request,"comp_details.html")
-
-# def operationDetails(request):
-#     return render(request,"operation_details.html")
 
 def contact(request):
     return render(request,"contact.html")
@@ -190,7 +183,6 @@ def getHMIdataFromAPI(readFromAPI):
 def deleteHMIAPIdata(request,id):
     return redirect("/hmi")
 
-
 apiInvURL = "http://172.26.98.238:8100/inhouseInventoryInfo/"
 
 def inv_get_data(request):
@@ -240,7 +232,6 @@ def buy(request):
     getINVData = getINVdataFromAPI(readFromInvAPI)
     return render(request,"buy.html",{'invAllData':getINVData})
 
-
 def inventory(request):
     if request.method == "POST":
         productSno=request.POST.get('productSno')
@@ -257,8 +248,8 @@ def inventory(request):
         createToAPI = requests.post(apiInvURL,data=jsonConvert)
         messages.success(request, 'your message has been sent!')
     inhouseInvs=InventoryIN.objects.all()
-    print(inhouseInvs)
-    addToMainInventory(request)
+    # print(inhouseInvs)
+    # addToMainInventory(request)
     getInventoryDetails(request)
     return render(request,"inHouseInventory.html",{'inhouseInvs':inhouseInvs})
 
@@ -280,7 +271,6 @@ def hmi(request):
         messages.success(request, 'your message has been sent!')
     hmiAllDatas = HMIDetail.objects.all()
     return render(request,"hmi/hmi.html",{'hmiAllData':hmiAllDatas})
-
 
 def readOperationJsonSaveToDB(request):
     jsonfileOperat = './static/json/operation.json'
@@ -305,10 +295,6 @@ def readAllDB(request):
     print(operDetail)
 
 def operationDetails(request):
-    # readAllDB(request)
-    # subprocess.Popen(os.getcwd() + "\\src\\_inputs\\data\\inventory_data.xlsx ")
-    # os.startfile("C:\Users\Shekhar's\source\repos\iitk\vyas_iitkDashboard\src\_inputs\data\inventory_data.xlsx")
-    # os.startfile("C:\Users\Shekhar's\source\repos\iitk\vyas_iitkDashboard\src\_inputs\data\inventory_data.xlsx",'print')
     operDetail = operationsDetails.objects.all()
     return render(request,"operation_details.html",{'operDetail':operDetail})
 
@@ -330,15 +316,8 @@ def readMachineJsonSaveToDB(request):
         machineDBData = machineDetails(machine_name = MachineName,line = line,status=status,MachineNo =machineno,Description=operationName,operation = operationName,currentDate=datetime.today())
         machineDBData.save()
         
-def addToMainInventory(request):
-    inhouseInvs=inhouseInventory.objects.all()
-    for inv in inhouseInvs:
-        comp = main.Component(inv.productSno,"Variant1",1,"SWL",inv.drawingno,"machin","READY",1,"Ac","02-05-2022")
-        forPreInventory.append(comp)
-
 def getInventoryDetails(request):
     inv = inhouseInventory.objects.all()
-    print(inv)
 
 def readInventoryData(request):
     input_folder = os.path.join(os.getcwd(),"src/_inputs/data")
@@ -361,7 +340,6 @@ def readInventoryData(request):
 
 def updateComponentsDetails(request,listindex):
     getDataFromComponentsUpdate = somelist[listindex - 1]
-    # print(getDataFromComponentsUpdate.component_name)
     return render(request,"updateComponentsDetails.html",{"updateComponent":getDataFromComponentsUpdate})
 
 def updateToNewFile(request,sno):
@@ -373,10 +351,16 @@ def updateToNewFile(request,sno):
     types = request.POST.get('type')
     new_component = {"component_name":new_component_name,"drawing_no":new_drawing_no,"qpc":new_qpc,"types":types,"ac":assembly_code,"inventory":new_inventory}
     somelist[sno - 1].update(new_component)
-    writeToExcelComponentDetails(request)
     return render(request,"componentsDetails.html",{"components":somelist})
 
 def writeToExcelComponentDetails(request):
     column = ('sno','Operation','Item Description','Drg.No.', 'QPC', 'I or O','Assembly Code','Inventory')
     df = pd.DataFrame(data=somelist)
     df.to_excel('./src\\_outputs\\Inventory_newData.xlsx',sheet_name="Inventory",header=column,index=None)
+
+def generateNewVariantOperationData(request,variant):
+    variantName  = variant
+    newFileName = "operation_data_"+variantName+"_new"
+    newDirectory = "./src\\_inputs\\data\\"+newFileName+".xlsx"
+    oldDirectory = "./src\\_inputs\\data\\operation_data.xlsx"
+    shutil.copy(oldDirectory,newDirectory)
