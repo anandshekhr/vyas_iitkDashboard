@@ -351,16 +351,20 @@ def updateToNewFile(request,sno):
     types = request.POST.get('type')
     new_component = {"component_name":new_component_name,"drawing_no":new_drawing_no,"qpc":new_qpc,"types":types,"ac":assembly_code,"inventory":new_inventory}
     somelist[sno - 1].update(new_component)
+    writeToExcelComponentDetails(request)
     return render(request,"componentsDetails.html",{"components":somelist})
 
 def writeToExcelComponentDetails(request):
     column = ('sno','Operation','Item Description','Drg.No.', 'QPC', 'I or O','Assembly Code','Inventory')
     df = pd.DataFrame(data=somelist)
-    df.to_excel('./src\\_outputs\\Inventory_newData.xlsx',sheet_name="Inventory",header=column,index=None)
+    df.to_excel(os.path.join(os.getcwd(),"src/_outputs/Inventory_newData.xlsx"),sheet_name="Inventory",header=column,index=None)
+    # return render(request,"componentsDetails.html",{"components":somelist})
 
 def generateNewVariantOperationData(request,variant):
     variantName  = variant
+    cwd = os.path.join(os.getcwd(),"src/_inputs/data/")
     newFileName = "operation_data_"+variantName+"_new"
-    newDirectory = "./src\\_inputs\\data\\"+newFileName+".xlsx"
-    oldDirectory = "./src\\_inputs\\data\\operation_data.xlsx"
-    shutil.copy(oldDirectory,newDirectory)
+    newFileDirectory = cwd+""+newFileName+".xlsx"
+    oldFileDirectory = cwd+"operation_data.xlsx"
+    if os.path.isfile(newFileDirectory) == False:
+        shutil.copy(oldFileDirectory,newFileDirectory)
