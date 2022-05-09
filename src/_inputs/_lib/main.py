@@ -577,7 +577,7 @@ def call_this(request,orders):
 	#######################################################
 	################Plotting gantt chart###################
 	#######################################################
-	checkDate(Schedule)
+	# checkDate(Schedule)
 	title = ""
 	# for order in orders:
 	# 	for variant in order.keys():
