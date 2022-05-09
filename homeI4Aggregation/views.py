@@ -372,7 +372,7 @@ def writeToExcelComponentDetails(request):
     global orderVariant
     cwd = os.path.join(os.getcwd(),"src/_inputs/data/")
     if orderVariant == "":
-        newFileName = "operation_data_new.xlsx"
+        newFileName = "operation_data.xlsx"
     else:
         newFileName = "operation_data_"+orderVariant+"_new.xlsx"
     column = ('sno','Operation','Item Description','Drg.No.', 'QPC', 'I or O','Assembly Code','Inventory')
