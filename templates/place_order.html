@@ -2,19 +2,19 @@
 {% block title %}Place_Order{% endblock title %}
 {% block body %}
 
-<div class="container px-4 mt-5"><br>
+<div class="container px-4 "><br>
     
-     <h1 class="text-3xl text-center leading-8 font-bold tracking-tight text-green-700 ">Job Scheduling</h1>
+     <h1 class="mt-2 text-3xl leading-8 font-bold tracking-tight text-green-700 sm:text-4xl text-center">Job Scheduling</h1>
  <div>
 <div class="container"><br>
     <form class="row g-3 pt-2"  method="post" action="/place_order">
         {% csrf_token %}
         <div class="col-md-6">
-            <label for="OR_no." class="form-label">Order Reference No.</label>
+            <label for="OR_no." class="form-label"style="font-size:20px">Order Reference No.</label>
             <input type="text" class="form-control" id="OR_no." name="OR_no" placeholder="Order Reference No">
         </div>
         <div class="col-md-6">
-            <label for="variant" class="form-label">Variant</label>
+            <label for="variant" class="form-label"style="font-size:20px">Variant</label>
             <select id="variant" class="form-select" name="variant">
                 <option selected>Select Variant</option>
                 <option value="LWSCZAC (2nd Class AC Chair Car)">LWSCZAC (2nd Class AC Chair Car)</option>
@@ -46,34 +46,34 @@
         </script>
         
         <div class ="col-md-6" >
-            <label class="md-form md-outline input-with-post-icon datepicker" for="start_date">Start Date</label>
+            <label class="md-form md-outline input-with-post-icon datepicker" for="start_date"style="font-size:20px">Start Date</label>
             <input placeholder="Select date" type="date" id="start_date" class="form-control" name ="start_date">
             <i class="fas fa-calendar input-prefix" tabindex=0></i>
         </div>
         <div class ="col-md-6" >
-            <label class="md-form md-outline input-with-post-icon datepicker" for="end_date">End Date</label>
+            <label class="md-form md-outline input-with-post-icon datepicker" for="end_date"style="font-size:20px">End Date</label>
             <input placeholder="Select date" type="date" id="end_date" class="form-control" name ="end_date">
             <i class="fas fa-calendar input-prefix" tabindex=0></i>
         </div>
         <div class="col-md-6">
-            <label for="quantity" class="form-label">Quantity</label>
+            <label for="quantity" class="form-label"style="font-size:20px">Quantity</label>
             <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity no.">
         </div>
         <div class="col-md-6">
-            <label for="priority" class="form-label">Priority</label>
+            <label for="priority" class="form-label"style="font-size:20px">Priority</label>
             <input type="number" class="form-control" id="priority" name="priority" placeholder="Enter Priotity no.">
         </div>
         
         <div class="grid grid-cols-1 gap-4 place-items-center">
-            <button type="submit" class="btn btn-primary px-4 ">Submit</button>
+            <button type="submit" class="btn btn-primary px-4 "style="font-size:20px">Submit</button>
         </div>
     </form>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
         <div class="col">
             <div class="card shadow-md">
             <h5 class="text-left text-blue-900 font-bold text-2xl text-center my-3">Component List</h5>
-                <div class="grid grid-cols-3 gap-4 place-items-center">
-                    <button type="submit" readonly class="btn btn-primary" onclick="window.location.href='/operation_details'">View List and Confirm</button>
+                <div class="grid grid-cols-1 gap-1 place-items-center">
+                    <button type="submit" readonly class="btn btn-primary" onclick="window.location.href='/operation_details'"style="font-size:20px;">View List and Confirm</button><br>
                     {% comment %} <button type="submit" readonly class="btn btn-primary" >Edit</button>
                     <button type="submit" readonly class="btn btn-primary" >Accept</button><br> {% endcomment %}
                 </div>
@@ -82,15 +82,15 @@
         <div class="col">
             <div class="card shadow-md">
                 <h5 class="text-left text-blue-900 font-bold text-2xl text-center my-3">Machine List</h5>
-                <div class="grid grid-cols-3 gap-4 place-items-center">
-                    <button type="submit" readonly class="btn btn-primary" onclick="window.location.href='/machine_details'">View List and Confirm</button>
+                <div class="grid grid-cols-1 gap-1 place-items-center">
+                    <button type="submit" readonly class="btn btn-primary" onclick="window.location.href='/machine_details'"style="font-size:20px;">View List and Confirm</button><br>
                     {% comment %} <button type="submit" readonly class="btn btn-primary" >Edit</button>
                     <button type="submit" readonly class="btn btn-primary" >Accept</button><br> {% endcomment %}
                 </div>
             </div>
         </div>
     </div><br>
-    <table class="table">
+    <table class="table"style="font-size:20px;">
         <thead>
             <tr>
                 <th scope="col">S No.</th>
@@ -103,7 +103,7 @@
                 <th scope="col">Actions</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody >
             {% if orders|length > 0 %}    
                 {% for order in orders %}
                     <tr>
@@ -125,7 +125,7 @@
     </table>
     <form class="row g-3"  action="/generate_schedule">
         <div class="grid grid-cols-1 gap-4 place-items-center">
-            <button type="submit" class="btn btn-primary" style="text-align:center">Generate Schedule</button>
+            <button type="submit" class="btn btn-primary" style="text-align:center;font-size:20px">Generate Schedule</button>
         </div>
     </form>
 </div>

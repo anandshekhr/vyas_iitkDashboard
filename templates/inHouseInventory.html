@@ -1,42 +1,36 @@
 {% extends 'base.html' %}
 {% block title %}Home{% endblock title %}
 {% block body %}    
-<div class="container px-4 pt-4">
-    <div class="container px-4 mt-5"><br>
-        <h1 class="text-3xl text-center leading-8 font-bold tracking-tight text-green-700 ">Inventory Details</h1>
+<div class="container px-4 ">
+    <div class="container px-4"><br>
+        <h1 class="mt-2 text-3xl leading-8 font-bold tracking-tight text-green-700 sm:text-4xl text-center">Inventory Details</h1>
     </div>
     <form class="row g-3 pt-5" method="post" action= "/inventoryInput">
         {% csrf_token %}  
         <div class="col-6">
-            <label for="productSno" class="form-label">Product SNo.</label>
+            <label for="productSno" class="form-label"style="font-size:20px">Product SNo.</label>
             <input type="text" class="form-control" id="productSno" placeholder="Enter Component Name" name="productSno">
         </div>
         <div class="col-6">
-            <label for="level" class="form-label">Level</label>
+            <label for="level" class="form-label"style="font-size:20px">Level</label>
             <input type="text" class="form-control" id="level" placeholder="Enter Component Level" name="level">
         </div>
         <div class="col-6">
-            <label for="qpp" class="form-label">QPP</label>
+            <label for="qpp" class="form-label"style="font-size:20px">QPP</label>
             <input type="Number" class="form-control" id="qpp" placeholder="Quantity Per Coach" name="qpp">
         </div>
-        <!-- <div class="col-6">
-            <label for="dimension" class="form-label">Dimension</label>
-            <input type="text" class="form-control" id="dimension" placeholder="Please Enter Part Serial Number" name="dimension">
-        </div> -->
+        
         <div class="col-6">
-            <label for="drawingno" class="form-label">Drawing No</label>
+            <label for="drawingno" class="form-label"style="font-size:20px">Drawing No</label>
             <input type="text" class="form-control" id="drawingno" placeholder="Please Enter Part Serial Number" name="drawingno">
         </div>
         <div class="col-6">
-            <label for="availableNos" class="form-label">Available Nos.</label>
+            <label for="availableNos" class="form-label"style="font-size:20px">Available Nos.</label>
             <input type="text" class="form-control" id="availableNos" placeholder="Please Enter Part Serial Number" name="availableNos">
         </div>
-        <!-- <div class="col-6">
-            <label for="description" class="form-label">Description</label>
-            <input type="text" class="form-control" id="description" placeholder="Please Enter Part Serial Number" name="description">
-        </div> -->
+       
         <div class="col-md-6">
-            <label for="timein" class="form-label">Time In</label>
+            <label for="timein" class="form-label"style="font-size:20px">Time In</label>
             <div class='input-group date' id='timein'>
                 <input type='datetime-local' class="form-control" name="timein" />
                 <span class="input-group-addon">
@@ -44,21 +38,14 @@
                 </span>
             </div>
         </div>
-        {% comment %} <script type="text/javascript">
-            $(function () {
-                $('#timein').datetimepicker();
-                $("#timein").on("dp.change", function (e) {
-                    $('#timeout').data("DateTimePicker").minDate(e.date);
-                });
-        </script> {% endcomment %}
+       
         <div class=" container col-12">
-            <button type="submit" class="btn btn-primary">Save</button>
-            <button type="submit" class="btn btn-primary">Clear</button>
+            <button type="submit" class="btn btn-primary"style="font-size:20px">Save</button>
+            <button type="submit" class="btn btn-primary"style="font-size:20px">Clear</button>
         </div>
-        {% comment %} <div class=" container col-6">
-        </div> {% endcomment %}
+      
     </form>
-    <table class="table">
+    <table class="table"style="font-size:20px">
         <thead>
             <tr>
                 <th scope="col">S No.</th>
