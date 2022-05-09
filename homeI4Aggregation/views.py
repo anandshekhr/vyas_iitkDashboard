@@ -127,7 +127,7 @@ def addidaq(request):
     return render(request,"additionalDaq.html")
 
 def addidaqpanel(request):
-    subprocess.Popen(os.getcwd() + "\\static\\execuables\\addiDaqPanel\\MFC-i4 Dashboard.exe") 
+    subprocess.Popen(os.getcwd() + "\\static\\execuables\\addiDaqPanel\\MCF-i4 Dashboard.exe") 
     return render(request,"additionalDaq.html")
 
 def daqpanelbharat(request):
@@ -327,18 +327,14 @@ def getInventoryDetails(request):
 
 def readInventoryData(request):
     global orderVariant
+    print(orderVariant)
     if orderVariant =="":
-        file_name = "operation_data.xlsx"
+        # file_name = "operation_data.xlsx"
         input_folder = os.path.join(os.getcwd(),"src\\_inputs\\data\\")
-        file_path = input_folder+"operation_data"+"_"+file_name+".xlsx"
+        file_path = input_folder+"operation_data.xlsx"
     else:
         input_folder = os.path.join(os.getcwd(),"src\\_inputs\\data\\")
         file_path = input_folder+"operation_data"+"_"+orderVariant+".xlsx"
-    # print(orderVariant)
-    # file_name = orderVariant
-    # input_folder = os.path.join(os.getcwd(),"src\\_inputs\\data\\")
-    # file_path = input_folder+"operation_data"+"_"+orderVariant+".xlsx"
-    # print(file_path)
     swl_op = pd.read_excel(file_path,sheet_name = 'swl_operation_components',header = None,skiprows = [0],engine="openpyxl")
     ewl_op = pd.read_excel(file_path,sheet_name = 'ewl_operation_components',header = None,skiprows = [0],engine="openpyxl")
     rf_op = pd.read_excel(file_path,sheet_name = 'rf_operation_components',header = None,skiprows = [0],engine="openpyxl")
@@ -374,10 +370,10 @@ def updateToNewFile(request,sno):
 
 def writeToExcelComponentDetails(request):
     global orderVariant
+    cwd = os.path.join(os.getcwd(),"src/_inputs/data/")
     if orderVariant == "":
         newFileName = "operation_data.xlsx"
     else:
-        cwd = os.path.join(os.getcwd(),"src/_inputs/data/")
         newFileName = "operation_data_"+orderVariant+"_new.xlsx"
     column = ('sno','Operation','Item Description','Drg.No.', 'QPC', 'I or O','Assembly Code','Inventory')
     df = pd.DataFrame(data=somelist)
@@ -389,32 +385,6 @@ def generateNewVariantOperationData(request,variant):
     cwd = os.path.join(os.getcwd(),"src/_inputs/data/")
     newFileName = "operation_data_"+variantName
     newFileDirectory = cwd+""+newFileName+".xlsx"
-    oldFileDirectory = cwd+"inventory_data.xlsx"
+    oldFileDirectory = cwd+"operation_data.xlsx"
     if os.path.isfile(newFileDirectory) == False:
         shutil.copy(oldFileDirectory,newFileDirectory)
-
-
-
-#for Schedular Related Methods and use Variable for Order Variant Name
-
-# class SchedularMethod():
-#     def __init__(self):
-#         self.variant_name = ""
-#         self.operation_data_reading_list = []
-#         self.aindex = 0
-        
-#     def placeOrder (self):
-#         if request.method =="POST":
-#             OR_no=request.POST.get('OR_no')
-#             variant=request.POST.get('variant')
-#             start_date=request.POST.get('start_date')
-#             end_date=request.POST.get('end_date') 
-#             quantity=request.POST.get('quantity') 
-#             priority=request.POST.get('priority') 
-#             order=productionOrder(orderRefNo=OR_no,orderVariant=variant,orderStartDate=start_date,orderEndDate=end_date,orderQuantity=quantity,orderPriority=priority,currentDate=datetime.today())
-#             order.save()
-#             messages.success(request, 'your Order has been sent!')
-#             generateNewVariantOperationData(request,variant=variant)
-#             self.variant_name = variant
-#         orders = productionOrder.objects.all()
-#         return render(request, "place_order.html",{'orders':orders})
