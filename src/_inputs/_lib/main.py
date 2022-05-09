@@ -84,18 +84,6 @@ def progressBarCalc(orders,completed_order):
 			
 	return progress_unit
 
-class Component(object):
-	def __init__(self,name,coach_variant,priority,line,component_no,machine,status,seq,assembly_code,start_date):
-		self.name = name
-		self.coach_variant = coach_variant
-		self.priority = priority
-		self.line = line
-		self.component_no = component_no
-		self.machine = machine
-		self.status = status
-		self.seq = seq
-		self.assembly_code = assembly_code
-		self.start_date = start_date
 ##############################################################
 #############Creating Virtual Machine Object Template#################
 ############################################################## 
@@ -216,7 +204,18 @@ def call_this(request,orders):
 	##############################################################
 	#############Creating Virtual Components Object Template##############
 	##############################################################
-	
+	class Component(object):
+		def __init__(self,name,coach_variant,priority,line,component_no,machine,status,seq,assembly_code,start_date):
+			self.name = name
+			self.coach_variant = coach_variant
+			self.priority = priority
+			self.line = line
+			self.component_no = component_no
+			self.machine = machine
+			self.status = status
+			self.seq = seq
+			self.assembly_code = assembly_code
+			self.start_date = start_date
 
 
 	######################################################################################################
@@ -520,15 +519,15 @@ def call_this(request,orders):
 	###2 mi.inventory files for shop floor and 
 	def check_if_components_ready_and_start_operation(inventory,priority,machine,input_components,output_components,line,variant):
 		components_list = []
-		for outputItem in output_components:
-			if outputItem in mi.inventory:
-				break
-			else:
-				for component in input_components:
-					for item in mi.inventory:
-						if item.line == line and (item.machine == machine.name or machine.name in item.machine) and item.name == component["name"] and item.component_no == component["part_no"] and item.priority == priority and item.coach_variant == variant and (item.start_date=="" or convert_to_timesteps(item.start_date) <= env.now):
-							components_list.append(item)
-							break
+		# for outputItem in output_components:
+		# 	if outputItem in mi.inventory:
+		# 		break
+			# else:
+		for component in input_components:
+			for item in mi.inventory:
+				if item.line == line and (item.machine == machine.name or machine.name in item.machine) and item.name == component["name"] and item.component_no == component["part_no"] and item.priority == priority and item.coach_variant == variant and (item.start_date=="" or convert_to_timesteps(item.start_date) <= env.now):
+					components_list.append(item)
+					break
 		start_operation(input_components,components_list)
 	
 	def start_operation(input_components,components_list):

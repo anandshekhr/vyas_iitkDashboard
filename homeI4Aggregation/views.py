@@ -1,9 +1,11 @@
+from msilib.schema import Class
 import operator
 import re
 import shutil
 from tracemalloc import start
 from django.shortcuts import render,HttpResponse,redirect
 from datetime import date, datetime
+from matplotlib.pyplot import cla
 
 from pyparsing import line
 from homeI4Aggregation.models import InventoryIN, machineDetails, makelist, productionOrder,componentDetails,HMIDetail,inhouseInventory,operationsDetails
@@ -18,6 +20,8 @@ import json
 from src._inputs._lib.main import Schedule
 import pandas as pd
 #id pass: industry4.0 , iforgotit1234
+
+orderVariant = ""
 
 somelist =  []
 a = 0
@@ -44,6 +48,8 @@ def placeOrder (request):
         order.save()
         messages.success(request, 'your Order has been sent!')
         generateNewVariantOperationData(request,variant=variant)
+        global orderVariant
+        orderVariant = variant
     orders = productionOrder.objects.all()
     return render(request, "place_order.html",{'orders':orders})
 
@@ -320,12 +326,24 @@ def getInventoryDetails(request):
     inv = inhouseInventory.objects.all()
 
 def readInventoryData(request):
-    input_folder = os.path.join(os.getcwd(),"src/_inputs/data")
-    swl_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'swl_operation_components',header = None,skiprows = [0],engine="openpyxl")
-    ewl_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'ewl_operation_components',header = None,skiprows = [0],engine="openpyxl")
-    rf_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'rf_operation_components',header = None,skiprows = [0],engine="openpyxl")
-    uf_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'uf_operation_components',header = None,skiprows = [0],engine="openpyxl")
-    sh_op = pd.read_excel(os.path.join(input_folder,'inventory_data.xlsx'),sheet_name = 'sh_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    global orderVariant
+    if orderVariant =="":
+        file_name = "operation_data.xlsx"
+        input_folder = os.path.join(os.getcwd(),"src\\_inputs\\data\\")
+        file_path = input_folder+"operation_data"+"_"+file_name+".xlsx"
+    else:
+        input_folder = os.path.join(os.getcwd(),"src\\_inputs\\data\\")
+        file_path = input_folder+"operation_data"+"_"+orderVariant+".xlsx"
+    # print(orderVariant)
+    # file_name = orderVariant
+    # input_folder = os.path.join(os.getcwd(),"src\\_inputs\\data\\")
+    # file_path = input_folder+"operation_data"+"_"+orderVariant+".xlsx"
+    # print(file_path)
+    swl_op = pd.read_excel(file_path,sheet_name = 'swl_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    ewl_op = pd.read_excel(file_path,sheet_name = 'ewl_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    rf_op = pd.read_excel(file_path,sheet_name = 'rf_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    uf_op = pd.read_excel(file_path,sheet_name = 'uf_operation_components',header = None,skiprows = [0],engine="openpyxl")
+    sh_op = pd.read_excel(file_path,sheet_name = 'sh_operation_components',header = None,skiprows = [0],engine="openpyxl")
     operation_list = [swl_op,ewl_op,rf_op,uf_op,sh_op]
     components = {}
     i = 0
@@ -355,16 +373,48 @@ def updateToNewFile(request,sno):
     return render(request,"componentsDetails.html",{"components":somelist})
 
 def writeToExcelComponentDetails(request):
+    global orderVariant
+    if orderVariant == "":
+        newFileName = "operation_data.xlsx"
+    else:
+        cwd = os.path.join(os.getcwd(),"src/_inputs/data/")
+        newFileName = "operation_data_"+orderVariant+"_new.xlsx"
     column = ('sno','Operation','Item Description','Drg.No.', 'QPC', 'I or O','Assembly Code','Inventory')
     df = pd.DataFrame(data=somelist)
-    df.to_excel(os.path.join(os.getcwd(),"src/_outputs/Inventory_newData.xlsx"),sheet_name="Inventory",header=column,index=None)
+    df.to_excel(os.path.join(cwd,newFileName),sheet_name="Inventory",header=column,index=None,engine="openpyxl")
     # return render(request,"componentsDetails.html",{"components":somelist})
 
 def generateNewVariantOperationData(request,variant):
     variantName  = variant
     cwd = os.path.join(os.getcwd(),"src/_inputs/data/")
-    newFileName = "operation_data_"+variantName+"_new"
+    newFileName = "operation_data_"+variantName
     newFileDirectory = cwd+""+newFileName+".xlsx"
-    oldFileDirectory = cwd+"operation_data.xlsx"
+    oldFileDirectory = cwd+"inventory_data.xlsx"
     if os.path.isfile(newFileDirectory) == False:
         shutil.copy(oldFileDirectory,newFileDirectory)
+
+
+
+#for Schedular Related Methods and use Variable for Order Variant Name
+
+# class SchedularMethod():
+#     def __init__(self):
+#         self.variant_name = ""
+#         self.operation_data_reading_list = []
+#         self.aindex = 0
+        
+#     def placeOrder (self):
+#         if request.method =="POST":
+#             OR_no=request.POST.get('OR_no')
+#             variant=request.POST.get('variant')
+#             start_date=request.POST.get('start_date')
+#             end_date=request.POST.get('end_date') 
+#             quantity=request.POST.get('quantity') 
+#             priority=request.POST.get('priority') 
+#             order=productionOrder(orderRefNo=OR_no,orderVariant=variant,orderStartDate=start_date,orderEndDate=end_date,orderQuantity=quantity,orderPriority=priority,currentDate=datetime.today())
+#             order.save()
+#             messages.success(request, 'your Order has been sent!')
+#             generateNewVariantOperationData(request,variant=variant)
+#             self.variant_name = variant
+#         orders = productionOrder.objects.all()
+#         return render(request, "place_order.html",{'orders':orders})
